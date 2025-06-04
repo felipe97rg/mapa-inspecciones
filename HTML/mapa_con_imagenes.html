@@ -1,0 +1,4635 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bfda94c4c508e0cfe36ba0905a3211ae {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_bfda94c4c508e0cfe36ba0905a3211ae" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_bfda94c4c508e0cfe36ba0905a3211ae = L.map(
+                "map_bfda94c4c508e0cfe36ba0905a3211ae",
+                {
+                    center: [4.351870081203007, -72.72879860526317],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_69e51b087e7f491d918800fbf4938837 = L.tileLayer(
+                "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}",
+                {
+  "minZoom": 0,
+  "maxZoom": 18,
+  "maxNativeZoom": 18,
+  "noWrap": false,
+  "attribution": "Esri World Imagery",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_69e51b087e7f491d918800fbf4938837.addTo(map_bfda94c4c508e0cfe36ba0905a3211ae);
+        
+    
+            var marker_cluster_4a9f476fe59f66b71645a2459311ba3f = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_ad33266bb84d6ff33f0741759a9a60dc = L.marker(
+                [4.3831619, -72.7334604],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_02e989d345a85ee69d22c5fb84206a1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d8e384e5e2e362a3b4ac611446a88d35 = $(`<div id="html_d8e384e5e2e362a3b4ac611446a88d35" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 11:20:14<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_112359_6341922374519582543.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_112359_6341922374519582543.jpg" width="200"><br></div>`)[0];
+                popup_02e989d345a85ee69d22c5fb84206a1f.setContent(html_d8e384e5e2e362a3b4ac611446a88d35);
+            
+        
+
+        marker_ad33266bb84d6ff33f0741759a9a60dc.bindPopup(popup_02e989d345a85ee69d22c5fb84206a1f)
+        ;
+
+        
+    
+    
+            marker_ad33266bb84d6ff33f0741759a9a60dc.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_72cc391e52f637a2ebaeb2845384a8b8 = L.marker(
+                [4.3831619, -72.7334604],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_864977069a51d8c3d0431379573be311 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9310c4402f300e686f59a2f5fcce8c48 = $(`<div id="html_9310c4402f300e686f59a2f5fcce8c48" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 11:17:06<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_111955_4235251424516012263.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_111955_4235251424516012263.jpg" width="200"><br></div>`)[0];
+                popup_864977069a51d8c3d0431379573be311.setContent(html_9310c4402f300e686f59a2f5fcce8c48);
+            
+        
+
+        marker_72cc391e52f637a2ebaeb2845384a8b8.bindPopup(popup_864977069a51d8c3d0431379573be311)
+        ;
+
+        
+    
+    
+            marker_72cc391e52f637a2ebaeb2845384a8b8.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_236d036b4ed251a8a03848e2723c2ac1 = L.marker(
+                [4.3831619, -72.7334604],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_32603d221e4e2427743975ce83864364 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_acc3a69c543aafd710ea51c6ff9e67c0 = $(`<div id="html_acc3a69c543aafd710ea51c6ff9e67c0" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 11:07:00<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_110939_402546036774440462.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_110939_402546036774440462.jpg" width="200"><br></div>`)[0];
+                popup_32603d221e4e2427743975ce83864364.setContent(html_acc3a69c543aafd710ea51c6ff9e67c0);
+            
+        
+
+        marker_236d036b4ed251a8a03848e2723c2ac1.bindPopup(popup_32603d221e4e2427743975ce83864364)
+        ;
+
+        
+    
+    
+            marker_236d036b4ed251a8a03848e2723c2ac1.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4cf6b7c2030b5d392902d33137fbe6e4 = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_affd581d85dc1185f385b73f9d366c0f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0df9a929bbcc75f1787ee025c30c62b3 = $(`<div id="html_0df9a929bbcc75f1787ee025c30c62b3" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 10:53:47<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_105759_9125191197519681527.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_105759_9125191197519681527.jpg" width="200"><br></div>`)[0];
+                popup_affd581d85dc1185f385b73f9d366c0f.setContent(html_0df9a929bbcc75f1787ee025c30c62b3);
+            
+        
+
+        marker_4cf6b7c2030b5d392902d33137fbe6e4.bindPopup(popup_affd581d85dc1185f385b73f9d366c0f)
+        ;
+
+        
+    
+    
+            marker_4cf6b7c2030b5d392902d33137fbe6e4.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e32befd4a4a57599ed3ae4723cd5eea = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8c5611e5d75ec5f1090db391aa658626 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_739768219725e219162ab30fa4aee96a = $(`<div id="html_739768219725e219162ab30fa4aee96a" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 10:43:54<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_104631_5304236937896407442.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_104631_5304236937896407442.jpg" width="200"><br></div>`)[0];
+                popup_8c5611e5d75ec5f1090db391aa658626.setContent(html_739768219725e219162ab30fa4aee96a);
+            
+        
+
+        marker_9e32befd4a4a57599ed3ae4723cd5eea.bindPopup(popup_8c5611e5d75ec5f1090db391aa658626)
+        ;
+
+        
+    
+    
+            marker_9e32befd4a4a57599ed3ae4723cd5eea.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e3a41583cbe974d738614419d95430ef = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_7928a28f8a8184417f757fa4c333203d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fe2c42f7d4b1ae0cbeb1be9a47f52371 = $(`<div id="html_fe2c42f7d4b1ae0cbeb1be9a47f52371" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 10:40:33<br>     <strong>Área:</strong> Jacana<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_104329_8694312126480937026.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_104329_8694312126480937026.jpg" width="200"><br></div>`)[0];
+                popup_7928a28f8a8184417f757fa4c333203d.setContent(html_fe2c42f7d4b1ae0cbeb1be9a47f52371);
+            
+        
+
+        marker_e3a41583cbe974d738614419d95430ef.bindPopup(popup_7928a28f8a8184417f757fa4c333203d)
+        ;
+
+        
+    
+    
+            marker_e3a41583cbe974d738614419d95430ef.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_075a4d01377645e70d7d6f449c00d7de = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_fe4bc63aeadbafb404669f4057f857d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_aef8de845d0e89e897adc16fe4fbe47b = $(`<div id="html_aef8de845d0e89e897adc16fe4fbe47b" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 10:15:01<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_102032_4383192404516443137.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_102032_4383192404516443137.jpg" width="200"><br></div>`)[0];
+                popup_fe4bc63aeadbafb404669f4057f857d1.setContent(html_aef8de845d0e89e897adc16fe4fbe47b);
+            
+        
+
+        marker_075a4d01377645e70d7d6f449c00d7de.bindPopup(popup_fe4bc63aeadbafb404669f4057f857d1)
+        ;
+
+        
+    
+    
+            marker_075a4d01377645e70d7d6f449c00d7de.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c718ad1357c5a30b019847fef89de4b = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ae10657688cbd7a3a972e7c3a9f7043a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_04f0027c2c172f5df1e8d3d67e914098 = $(`<div id="html_04f0027c2c172f5df1e8d3d67e914098" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 10:09:30<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_101245_8814726797058069079.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_101245_8814726797058069079.jpg" width="200"><br></div>`)[0];
+                popup_ae10657688cbd7a3a972e7c3a9f7043a.setContent(html_04f0027c2c172f5df1e8d3d67e914098);
+            
+        
+
+        marker_6c718ad1357c5a30b019847fef89de4b.bindPopup(popup_ae10657688cbd7a3a972e7c3a9f7043a)
+        ;
+
+        
+    
+    
+            marker_6c718ad1357c5a30b019847fef89de4b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8456ba9eeab5c1af39c2e77ac44e6e96 = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_9fa54bf441aed358ab4e1d87fdd35286 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea54b621be2195ea9ccaa618bd6abb82 = $(`<div id="html_ea54b621be2195ea9ccaa618bd6abb82" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:43:13<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_094833_8351308014772966320.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_094833_8351308014772966320.jpg" width="200"><br></div>`)[0];
+                popup_9fa54bf441aed358ab4e1d87fdd35286.setContent(html_ea54b621be2195ea9ccaa618bd6abb82);
+            
+        
+
+        marker_8456ba9eeab5c1af39c2e77ac44e6e96.bindPopup(popup_9fa54bf441aed358ab4e1d87fdd35286)
+        ;
+
+        
+    
+    
+            marker_8456ba9eeab5c1af39c2e77ac44e6e96.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a0efb8a46a2e01a9e685d23145ce61ad = L.marker(
+                [4.3861946, -72.7257862],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_0564d76ed99ac5124768d75aff6aff87 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a97074fa8af2fc1f88277d2c54f880ea = $(`<div id="html_a97074fa8af2fc1f88277d2c54f880ea" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:39:30<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_094255_3667893897656487740.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_094255_3667893897656487740.jpg" width="200"><br></div>`)[0];
+                popup_0564d76ed99ac5124768d75aff6aff87.setContent(html_a97074fa8af2fc1f88277d2c54f880ea);
+            
+        
+
+        marker_a0efb8a46a2e01a9e685d23145ce61ad.bindPopup(popup_0564d76ed99ac5124768d75aff6aff87)
+        ;
+
+        
+    
+    
+            marker_a0efb8a46a2e01a9e685d23145ce61ad.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b9bce340aa23cda32be2bcf129173e26 = L.marker(
+                [4.38834, -72.7247952],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_1b602196042b7836e8129ce5ea3990a0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f00e3f9539f4113fc7c2f54ccc2acf8f = $(`<div id="html_f00e3f9539f4113fc7c2f54ccc2acf8f" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:37:11<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_093903_8636109426622706188.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_093903_8636109426622706188.jpg" width="200"><br></div>`)[0];
+                popup_1b602196042b7836e8129ce5ea3990a0.setContent(html_f00e3f9539f4113fc7c2f54ccc2acf8f);
+            
+        
+
+        marker_b9bce340aa23cda32be2bcf129173e26.bindPopup(popup_1b602196042b7836e8129ce5ea3990a0)
+        ;
+
+        
+    
+    
+            marker_b9bce340aa23cda32be2bcf129173e26.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_56ad319192519bee82b28860369717a9 = L.marker(
+                [4.38834, -72.7247952],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_30d31ba032796df04c8e1cbff341a8ae = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_63c115b093ad72f7b02035b4f71f0342 = $(`<div id="html_63c115b093ad72f7b02035b4f71f0342" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:33:12<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_093632_1747765125046565549.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_093632_1747765125046565549.jpg" width="200"><br></div>`)[0];
+                popup_30d31ba032796df04c8e1cbff341a8ae.setContent(html_63c115b093ad72f7b02035b4f71f0342);
+            
+        
+
+        marker_56ad319192519bee82b28860369717a9.bindPopup(popup_30d31ba032796df04c8e1cbff341a8ae)
+        ;
+
+        
+    
+    
+            marker_56ad319192519bee82b28860369717a9.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_85d4924f5b23ad506a400b913d386364 = L.marker(
+                [4.38834, -72.7247952],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_b05af68b8bd03b85eeaab58ff25c348a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_94c3e0b128305935bd23c9bf57e17f27 = $(`<div id="html_94c3e0b128305935bd23c9bf57e17f27" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:28:44<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_093252_861121110609543291.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_093252_861121110609543291.jpg" width="200"><br></div>`)[0];
+                popup_b05af68b8bd03b85eeaab58ff25c348a.setContent(html_94c3e0b128305935bd23c9bf57e17f27);
+            
+        
+
+        marker_85d4924f5b23ad506a400b913d386364.bindPopup(popup_b05af68b8bd03b85eeaab58ff25c348a)
+        ;
+
+        
+    
+    
+            marker_85d4924f5b23ad506a400b913d386364.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5ba7bf097d31a8c61baca41981463185 = L.marker(
+                [4.38834, -72.7247952],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_807d4c7e0b0485665c26764bafd406dc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d90ff82075aa4b0f84175ca8f2b74fb9 = $(`<div id="html_d90ff82075aa4b0f84175ca8f2b74fb9" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:21:10<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_092823_6161720912084311606.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_092823_6161720912084311606.jpg" width="200"><br></div>`)[0];
+                popup_807d4c7e0b0485665c26764bafd406dc.setContent(html_d90ff82075aa4b0f84175ca8f2b74fb9);
+            
+        
+
+        marker_5ba7bf097d31a8c61baca41981463185.bindPopup(popup_807d4c7e0b0485665c26764bafd406dc)
+        ;
+
+        
+    
+    
+            marker_5ba7bf097d31a8c61baca41981463185.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_142c0dde9e659d603276e43841e559c9 = L.marker(
+                [4.387994, -72.7238966],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_772f56911ebbe0085e2232f5a3736ce6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_041c7e5051db8d3fbd230b4c1ee4a7c4 = $(`<div id="html_041c7e5051db8d3fbd230b4c1ee4a7c4" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:07:44<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Retención canadiense <br>     <strong>Foto:</strong> JPEG_20250530_091106_1058209569030770063.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_091106_1058209569030770063.jpg" width="200"><br></div>`)[0];
+                popup_772f56911ebbe0085e2232f5a3736ce6.setContent(html_041c7e5051db8d3fbd230b4c1ee4a7c4);
+            
+        
+
+        marker_142c0dde9e659d603276e43841e559c9.bindPopup(popup_772f56911ebbe0085e2232f5a3736ce6)
+        ;
+
+        
+    
+    
+            marker_142c0dde9e659d603276e43841e559c9.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_58b78b69881b7c89c8a4b33c258b4649 = L.marker(
+                [4.387994, -72.7238966],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_d63e4964a1f4dce16666eea970a83592 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_58bd3ca0a0f03930babca58ab7f046f0 = $(`<div id="html_58bd3ca0a0f03930babca58ab7f046f0" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 09:02:00<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_090715_3472237269360114154.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_090715_3472237269360114154.jpg" width="200"><br></div>`)[0];
+                popup_d63e4964a1f4dce16666eea970a83592.setContent(html_58bd3ca0a0f03930babca58ab7f046f0);
+            
+        
+
+        marker_58b78b69881b7c89c8a4b33c258b4649.bindPopup(popup_d63e4964a1f4dce16666eea970a83592)
+        ;
+
+        
+    
+    
+            marker_58b78b69881b7c89c8a4b33c258b4649.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a812fab6bf90fa0c0ed48d3f58cacc57 = L.marker(
+                [4.3882569, -72.7237225],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8c8a0ab421da564dbdf1376046bb0355 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bf27bc6a1819872d4476a387dabe0eb2 = $(`<div id="html_bf27bc6a1819872d4476a387dabe0eb2" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 08:53:55<br>     <strong>Área:</strong> Jacana <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250530_090134_239045538564425755.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_090134_239045538564425755.jpg" width="200"><br></div>`)[0];
+                popup_8c8a0ab421da564dbdf1376046bb0355.setContent(html_bf27bc6a1819872d4476a387dabe0eb2);
+            
+        
+
+        marker_a812fab6bf90fa0c0ed48d3f58cacc57.bindPopup(popup_8c8a0ab421da564dbdf1376046bb0355)
+        ;
+
+        
+    
+    
+            marker_a812fab6bf90fa0c0ed48d3f58cacc57.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a4c1a25cef1f68eae07503d9bc7af61a = L.marker(
+                [4.3882569, -72.7237225],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_3da5212c1ca886eb64464505deb63998 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_044dfb33b03814dc870610434adc210e = $(`<div id="html_044dfb33b03814dc870610434adc210e" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-30 08:49:06<br>     <strong>Área:</strong> Jacana<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura pullover para conexión con pórtico Jacana 2<br>     <strong>Foto:</strong> JPEG_20250530_085332_7038109092262993531.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250530_085332_7038109092262993531.jpg" width="200"><br></div>`)[0];
+                popup_3da5212c1ca886eb64464505deb63998.setContent(html_044dfb33b03814dc870610434adc210e);
+            
+        
+
+        marker_a4c1a25cef1f68eae07503d9bc7af61a.bindPopup(popup_3da5212c1ca886eb64464505deb63998)
+        ;
+
+        
+    
+    
+            marker_a4c1a25cef1f68eae07503d9bc7af61a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e4428eb6e94aecf5e43392cc3dfacb79 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e252798a47756de8d4cf9af8f9e85a04 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_823a53c90210b570e12cf5276b2eeafc = $(`<div id="html_823a53c90210b570e12cf5276b2eeafc" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 16:37:46<br>     <strong>Área:</strong> R4<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención sobre una cruceta <br>     <strong>Foto:</strong> JPEG_20250529_164010_5887150716265386482.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_164010_5887150716265386482.jpg" width="200"><br></div>`)[0];
+                popup_e252798a47756de8d4cf9af8f9e85a04.setContent(html_823a53c90210b570e12cf5276b2eeafc);
+            
+        
+
+        marker_e4428eb6e94aecf5e43392cc3dfacb79.bindPopup(popup_e252798a47756de8d4cf9af8f9e85a04)
+        ;
+
+        
+    
+    
+            marker_e4428eb6e94aecf5e43392cc3dfacb79.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b8336d21ef950f2bd60d7083c943efeb = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_7f75a1a92080b4db01c895e57a0a99f1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dd5f2d0e94226c98562c1367e7a6a13e = $(`<div id="html_dd5f2d0e94226c98562c1367e7a6a13e" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 16:07:40<br>     <strong>Área:</strong> R4<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con doble configuración, por un costado (bacano) es triangular y por el otro costado (R4) es horizontal sobre una cruceta, se encuentran dos templetes rotos<br>     <strong>Foto:</strong> JPEG_20250529_161711_4558120299050103127.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_161711_4558120299050103127.jpg" width="200"><br></div>`)[0];
+                popup_7f75a1a92080b4db01c895e57a0a99f1.setContent(html_dd5f2d0e94226c98562c1367e7a6a13e);
+            
+        
+
+        marker_b8336d21ef950f2bd60d7083c943efeb.bindPopup(popup_7f75a1a92080b4db01c895e57a0a99f1)
+        ;
+
+        
+    
+    
+            marker_b8336d21ef950f2bd60d7083c943efeb.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4bd3b2e4078e692120b8cf6087abe62b = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_4d4184ec51a377c63187bb3e4f438024 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dda9d9bc2b0df182588cb26ef244d313 = $(`<div id="html_dda9d9bc2b0df182588cb26ef244d313" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 16:02:58<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_160534_1102352782827823308.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_160534_1102352782827823308.jpg" width="200"><br></div>`)[0];
+                popup_4d4184ec51a377c63187bb3e4f438024.setContent(html_dda9d9bc2b0df182588cb26ef244d313);
+            
+        
+
+        marker_4bd3b2e4078e692120b8cf6087abe62b.bindPopup(popup_4d4184ec51a377c63187bb3e4f438024)
+        ;
+
+        
+    
+    
+            marker_4bd3b2e4078e692120b8cf6087abe62b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9283f2cd406c8fcdb16f2470309648cf = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_973f9d597e2a3a1affe865f4dc6bb642 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3ecfbde5a80910cc0e34a968dde3e60a = $(`<div id="html_3ecfbde5a80910cc0e34a968dde3e60a" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 16:00:01<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_160247_5688822466290044155.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_160247_5688822466290044155.jpg" width="200"><br></div>`)[0];
+                popup_973f9d597e2a3a1affe865f4dc6bb642.setContent(html_3ecfbde5a80910cc0e34a968dde3e60a);
+            
+        
+
+        marker_9283f2cd406c8fcdb16f2470309648cf.bindPopup(popup_973f9d597e2a3a1affe865f4dc6bb642)
+        ;
+
+        
+    
+    
+            marker_9283f2cd406c8fcdb16f2470309648cf.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5f28ca3740988cd884777f8a1f7bfbde = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_83d5403a8025c0f1d97f9f58e5112ca8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_87fe65258639356c91feb9c22ee77485 = $(`<div id="html_87fe65258639356c91feb9c22ee77485" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:54:27<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_155945_5750798126436414204.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_155945_5750798126436414204.jpg" width="200"><br></div>`)[0];
+                popup_83d5403a8025c0f1d97f9f58e5112ca8.setContent(html_87fe65258639356c91feb9c22ee77485);
+            
+        
+
+        marker_5f28ca3740988cd884777f8a1f7bfbde.bindPopup(popup_83d5403a8025c0f1d97f9f58e5112ca8)
+        ;
+
+        
+    
+    
+            marker_5f28ca3740988cd884777f8a1f7bfbde.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_308b816131c33f7dba92dd4c23ee8050 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_72bb9f3bfe2453d8d0fb327709004f0d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_fec89c4e2b98a5b5eb645a65c546e937 = $(`<div id="html_fec89c4e2b98a5b5eb645a65c546e937" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:51:23<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_155401_6171628270837626978.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_155401_6171628270837626978.jpg" width="200"><br></div>`)[0];
+                popup_72bb9f3bfe2453d8d0fb327709004f0d.setContent(html_fec89c4e2b98a5b5eb645a65c546e937);
+            
+        
+
+        marker_308b816131c33f7dba92dd4c23ee8050.bindPopup(popup_72bb9f3bfe2453d8d0fb327709004f0d)
+        ;
+
+        
+    
+    
+            marker_308b816131c33f7dba92dd4c23ee8050.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6cc56ff8102ff78db770a4c1ca1b0c7e = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_804484eaa38a6fa8cc91ee1175a02eab = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3af5b6a9791bb2f9ee18140d3180d72a = $(`<div id="html_3af5b6a9791bb2f9ee18140d3180d72a" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:48:36<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_155112_4668518951599019856.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_155112_4668518951599019856.jpg" width="200"><br></div>`)[0];
+                popup_804484eaa38a6fa8cc91ee1175a02eab.setContent(html_3af5b6a9791bb2f9ee18140d3180d72a);
+            
+        
+
+        marker_6cc56ff8102ff78db770a4c1ca1b0c7e.bindPopup(popup_804484eaa38a6fa8cc91ee1175a02eab)
+        ;
+
+        
+    
+    
+            marker_6cc56ff8102ff78db770a4c1ca1b0c7e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a6aafb69cd0a71cb3e6f5fc122d24cb = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_2ce705e9dc96347f45003c886efb2091 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b90714b7895d3ba9f829666c0e8dfb68 = $(`<div id="html_b90714b7895d3ba9f829666c0e8dfb68" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:26:40<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con derivación para cambio de ángulo, cadenas de aisladores externas de 6 discos <br>     <strong>Foto:</strong> JPEG_20250529_153231_3145544223420824724.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_153231_3145544223420824724.jpg" width="200"><br></div>`)[0];
+                popup_2ce705e9dc96347f45003c886efb2091.setContent(html_b90714b7895d3ba9f829666c0e8dfb68);
+            
+        
+
+        marker_4a6aafb69cd0a71cb3e6f5fc122d24cb.bindPopup(popup_2ce705e9dc96347f45003c886efb2091)
+        ;
+
+        
+    
+    
+            marker_4a6aafb69cd0a71cb3e6f5fc122d24cb.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4c6d444cee2d20c7365279d906aaf7f4 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_77a814ff152f7fa8044797287942635d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_53e546a3bea5a97d8f55a4eaf4e810e2 = $(`<div id="html_53e546a3bea5a97d8f55a4eaf4e810e2" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:22:04<br>     <strong>Área:</strong> Ponyo<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 8 discos en fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_152622_2367665984100954164.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_152622_2367665984100954164.jpg" width="200"><br></div>`)[0];
+                popup_77a814ff152f7fa8044797287942635d.setContent(html_53e546a3bea5a97d8f55a4eaf4e810e2);
+            
+        
+
+        marker_4c6d444cee2d20c7365279d906aaf7f4.bindPopup(popup_77a814ff152f7fa8044797287942635d)
+        ;
+
+        
+    
+    
+            marker_4c6d444cee2d20c7365279d906aaf7f4.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9e62c0445710562f6330e580caf6a203 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_950d1912363329a48fc35bf7640a2e41 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_203074457a6b135759b8eaa143a93544 = $(`<div id="html_203074457a6b135759b8eaa143a93544" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:19:11<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_152125_6225871199875326994.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_152125_6225871199875326994.jpg" width="200"><br></div>`)[0];
+                popup_950d1912363329a48fc35bf7640a2e41.setContent(html_203074457a6b135759b8eaa143a93544);
+            
+        
+
+        marker_9e62c0445710562f6330e580caf6a203.bindPopup(popup_950d1912363329a48fc35bf7640a2e41)
+        ;
+
+        
+    
+    
+            marker_9e62c0445710562f6330e580caf6a203.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_982f8b6630629025ed23e88bc2835ff3 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_834e36b9183252ac19fd921c4e271ece = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_363974f5aba1c9ae222f8e4ae75f1b07 = $(`<div id="html_363974f5aba1c9ae222f8e4ae75f1b07" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:14:15<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 8 discos en la fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_151852_8322066987814955636.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_151852_8322066987814955636.jpg" width="200"><br></div>`)[0];
+                popup_834e36b9183252ac19fd921c4e271ece.setContent(html_363974f5aba1c9ae222f8e4ae75f1b07);
+            
+        
+
+        marker_982f8b6630629025ed23e88bc2835ff3.bindPopup(popup_834e36b9183252ac19fd921c4e271ece)
+        ;
+
+        
+    
+    
+            marker_982f8b6630629025ed23e88bc2835ff3.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_185e2dd5c0141bf1b4892a078ae5a1db = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ae28d972ca50df51d9c2559d56ebf93f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a675a21be7405aaf4be508085dbd0e7 = $(`<div id="html_9a675a21be7405aaf4be508085dbd0e7" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:10:33<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_151313_555379555086885976.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_151313_555379555086885976.jpg" width="200"><br></div>`)[0];
+                popup_ae28d972ca50df51d9c2559d56ebf93f.setContent(html_9a675a21be7405aaf4be508085dbd0e7);
+            
+        
+
+        marker_185e2dd5c0141bf1b4892a078ae5a1db.bindPopup(popup_ae28d972ca50df51d9c2559d56ebf93f)
+        ;
+
+        
+    
+    
+            marker_185e2dd5c0141bf1b4892a078ae5a1db.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5d339c91fc82517548409d7b2de9b52c = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_2199d42e136c6da11bdaaa1c8dc5c23b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_88bbcb20c780fc0e452b6d3ccf4910fc = $(`<div id="html_88bbcb20c780fc0e452b6d3ccf4910fc" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:07:11<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_150958_4995483252540070945.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_150958_4995483252540070945.jpg" width="200"><br></div>`)[0];
+                popup_2199d42e136c6da11bdaaa1c8dc5c23b.setContent(html_88bbcb20c780fc0e452b6d3ccf4910fc);
+            
+        
+
+        marker_5d339c91fc82517548409d7b2de9b52c.bindPopup(popup_2199d42e136c6da11bdaaa1c8dc5c23b)
+        ;
+
+        
+    
+    
+            marker_5d339c91fc82517548409d7b2de9b52c.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_075f00c345e8ea3b69fa75bcdef4de2b = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8c8f34cedc9ec9345c4454b67418c21e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0639d60e1c724b3144578132b8ad872d = $(`<div id="html_0639d60e1c724b3144578132b8ad872d" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 15:01:57<br>     <strong>Área:</strong> R4<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 8 discos en la fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_150700_4753569827215432871.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_150700_4753569827215432871.jpg" width="200"><br></div>`)[0];
+                popup_8c8f34cedc9ec9345c4454b67418c21e.setContent(html_0639d60e1c724b3144578132b8ad872d);
+            
+        
+
+        marker_075f00c345e8ea3b69fa75bcdef4de2b.bindPopup(popup_8c8f34cedc9ec9345c4454b67418c21e)
+        ;
+
+        
+    
+    
+            marker_075f00c345e8ea3b69fa75bcdef4de2b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d067948316da92c183044aa2c4ad012 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_b3d1025f300e0bce07fb217775dfdc18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0a9026497bd4284cc841fedfa8df265a = $(`<div id="html_0a9026497bd4284cc841fedfa8df265a" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:55:30<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con derivación para cambio de ángulo, 1 dps de la mitad  <br>     <strong>Foto:</strong> JPEG_20250529_150143_7445427825552574936.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_150143_7445427825552574936.jpg" width="200"><br></div>`)[0];
+                popup_b3d1025f300e0bce07fb217775dfdc18.setContent(html_0a9026497bd4284cc841fedfa8df265a);
+            
+        
+
+        marker_8d067948316da92c183044aa2c4ad012.bindPopup(popup_b3d1025f300e0bce07fb217775dfdc18)
+        ;
+
+        
+    
+    
+            marker_8d067948316da92c183044aa2c4ad012.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8485c64f3cc43801c2024540bbe6796b = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_5d9beed3a53e1d5d1f87bed9746c9027 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8169db165703f1cf6aa1294451a53d31 = $(`<div id="html_8169db165703f1cf6aa1294451a53d31" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:50:53<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 8 discos en fase de la mitad y 2 dps en fases externas <br>     <strong>Foto:</strong> JPEG_20250529_145433_5558482283258642060.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_145433_5558482283258642060.jpg" width="200"><br></div>`)[0];
+                popup_5d9beed3a53e1d5d1f87bed9746c9027.setContent(html_8169db165703f1cf6aa1294451a53d31);
+            
+        
+
+        marker_8485c64f3cc43801c2024540bbe6796b.bindPopup(popup_5d9beed3a53e1d5d1f87bed9746c9027)
+        ;
+
+        
+    
+    
+            marker_8485c64f3cc43801c2024540bbe6796b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_40ca494de0639bda272e64da52df4942 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_2a10f6d334f157628cc4746fdd1b0b3d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9a1b352b9f1f562c41935622d7aa3976 = $(`<div id="html_9a1b352b9f1f562c41935622d7aa3976" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:47:57<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250529_145021_6184141875368580535.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_145021_6184141875368580535.jpg" width="200"><br></div>`)[0];
+                popup_2a10f6d334f157628cc4746fdd1b0b3d.setContent(html_9a1b352b9f1f562c41935622d7aa3976);
+            
+        
+
+        marker_40ca494de0639bda272e64da52df4942.bindPopup(popup_2a10f6d334f157628cc4746fdd1b0b3d)
+        ;
+
+        
+    
+    
+            marker_40ca494de0639bda272e64da52df4942.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dc614bb0f9134d7ed86822d3e69f9374 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_4a3f4055cb6e42c38a83a0334ecfe5ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_718dde953ae524db92e0dc65823097be = $(`<div id="html_718dde953ae524db92e0dc65823097be" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:43:43<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250529_144743_3622816633804010688.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_144743_3622816633804010688.jpg" width="200"><br></div>`)[0];
+                popup_4a3f4055cb6e42c38a83a0334ecfe5ca.setContent(html_718dde953ae524db92e0dc65823097be);
+            
+        
+
+        marker_dc614bb0f9134d7ed86822d3e69f9374.bindPopup(popup_4a3f4055cb6e42c38a83a0334ecfe5ca)
+        ;
+
+        
+    
+    
+            marker_dc614bb0f9134d7ed86822d3e69f9374.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8f299626abad2d981e7870209fc19728 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ad5d9f36267f356e7acb56288e07a961 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_756ff19df99c0e1ce2a313df74404479 = $(`<div id="html_756ff19df99c0e1ce2a313df74404479" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:41:26<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente y 1 dps para la fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_144331_3450000803746010005.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_144331_3450000803746010005.jpg" width="200"><br></div>`)[0];
+                popup_ad5d9f36267f356e7acb56288e07a961.setContent(html_756ff19df99c0e1ce2a313df74404479);
+            
+        
+
+        marker_8f299626abad2d981e7870209fc19728.bindPopup(popup_ad5d9f36267f356e7acb56288e07a961)
+        ;
+
+        
+    
+    
+            marker_8f299626abad2d981e7870209fc19728.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_42974ff6119a6b8a04e96edff796b4f1 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_d7f40d74bbaad1c339e77f1b2992ddc9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_06fd1569daf0a932d3e18ae22e11db81 = $(`<div id="html_06fd1569daf0a932d3e18ae22e11db81" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:31:30<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250529_143516_1989869781990899385.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_143516_1989869781990899385.jpg" width="200"><br></div>`)[0];
+                popup_d7f40d74bbaad1c339e77f1b2992ddc9.setContent(html_06fd1569daf0a932d3e18ae22e11db81);
+            
+        
+
+        marker_42974ff6119a6b8a04e96edff796b4f1.bindPopup(popup_d7f40d74bbaad1c339e77f1b2992ddc9)
+        ;
+
+        
+    
+    
+            marker_42974ff6119a6b8a04e96edff796b4f1.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fe1e2d6fd0ff9febe8d7f9fe7049efca = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_31efa102da4c5379d347b9c3a59dd5be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e33d8ab1a161afad086349d40562b52 = $(`<div id="html_4e33d8ab1a161afad086349d40562b52" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:27:09<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente y 1 dps en fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_143100_2828500916098751842.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_143100_2828500916098751842.jpg" width="200"><br></div>`)[0];
+                popup_31efa102da4c5379d347b9c3a59dd5be.setContent(html_4e33d8ab1a161afad086349d40562b52);
+            
+        
+
+        marker_fe1e2d6fd0ff9febe8d7f9fe7049efca.bindPopup(popup_31efa102da4c5379d347b9c3a59dd5be)
+        ;
+
+        
+    
+    
+            marker_fe1e2d6fd0ff9febe8d7f9fe7049efca.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b94b7c3bed5aa01d53905513ee648a27 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_2ff50ffd20d8ec3bfeddf773af25df6a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_dce0750132d7d05408602cfa86ebb1b3 = $(`<div id="html_dce0750132d7d05408602cfa86ebb1b3" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:22:57<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura retención con cadena de aisladores de 8 discos en fase de la mitad y 2 dps en fases externas <br>     <strong>Foto:</strong> JPEG_20250529_142640_3569643057688721960.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_142640_3569643057688721960.jpg" width="200"><br></div>`)[0];
+                popup_2ff50ffd20d8ec3bfeddf773af25df6a.setContent(html_dce0750132d7d05408602cfa86ebb1b3);
+            
+        
+
+        marker_b94b7c3bed5aa01d53905513ee648a27.bindPopup(popup_2ff50ffd20d8ec3bfeddf773af25df6a)
+        ;
+
+        
+    
+    
+            marker_b94b7c3bed5aa01d53905513ee648a27.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_110457af794e000139d991bc705ffd2b = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_5b7b5c423eb77f89e311ac3513dab6a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c523f836b1765df8486a0ef105090d56 = $(`<div id="html_c523f836b1765df8486a0ef105090d56" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:19:42<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250529_142245_3392926549090818085.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_142245_3392926549090818085.jpg" width="200"><br></div>`)[0];
+                popup_5b7b5c423eb77f89e311ac3513dab6a9.setContent(html_c523f836b1765df8486a0ef105090d56);
+            
+        
+
+        marker_110457af794e000139d991bc705ffd2b.bindPopup(popup_5b7b5c423eb77f89e311ac3513dab6a9)
+        ;
+
+        
+    
+    
+            marker_110457af794e000139d991bc705ffd2b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_50ce274b56965de6b82645ef497beeb0 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_7bf59cdecb4d9b1272e935ecea9025a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_326ffe1309978ee2bb2d938f0e1d9ef2 = $(`<div id="html_326ffe1309978ee2bb2d938f0e1d9ef2" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:14:48<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250529_141923_2847975976524967997.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_141923_2847975976524967997.jpg" width="200"><br></div>`)[0];
+                popup_7bf59cdecb4d9b1272e935ecea9025a5.setContent(html_326ffe1309978ee2bb2d938f0e1d9ef2);
+            
+        
+
+        marker_50ce274b56965de6b82645ef497beeb0.bindPopup(popup_7bf59cdecb4d9b1272e935ecea9025a5)
+        ;
+
+        
+    
+    
+            marker_50ce274b56965de6b82645ef497beeb0.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5708795f354ac7e6e9c40ea1061e29db = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_a7df6824f6bdee7a633c4050e4382bc7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_138362b1e11e16931d26dd2c2e17405f = $(`<div id="html_138362b1e11e16931d26dd2c2e17405f" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:09:29<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250529_141356_7845289115660867384.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_141356_7845289115660867384.jpg" width="200"><br></div>`)[0];
+                popup_a7df6824f6bdee7a633c4050e4382bc7.setContent(html_138362b1e11e16931d26dd2c2e17405f);
+            
+        
+
+        marker_5708795f354ac7e6e9c40ea1061e29db.bindPopup(popup_a7df6824f6bdee7a633c4050e4382bc7)
+        ;
+
+        
+    
+    
+            marker_5708795f354ac7e6e9c40ea1061e29db.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d127fab88107562eef4e0eca17677e50 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_5871929f799a58dd73d868c6cc72f3fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ae759f876654579419aa6131c407f0df = $(`<div id="html_ae759f876654579419aa6131c407f0df" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:06:33<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención usada como paso, con 2 dps<br>     <strong>Foto:</strong> JPEG_20250529_140847_3376746353878817317.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_140847_3376746353878817317.jpg" width="200"><br></div>`)[0];
+                popup_5871929f799a58dd73d868c6cc72f3fa.setContent(html_ae759f876654579419aa6131c407f0df);
+            
+        
+
+        marker_d127fab88107562eef4e0eca17677e50.bindPopup(popup_5871929f799a58dd73d868c6cc72f3fa)
+        ;
+
+        
+    
+    
+            marker_d127fab88107562eef4e0eca17677e50.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1242e43210137a3681532c541d5faca3 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_54b70bb121515f9524f068493bae4bfe = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_debb32a0827d839c2ff025083f8494d4 = $(`<div id="html_debb32a0827d839c2ff025083f8494d4" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 14:02:31<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_140423_3866846708211845347.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_140423_3866846708211845347.jpg" width="200"><br></div>`)[0];
+                popup_54b70bb121515f9524f068493bae4bfe.setContent(html_debb32a0827d839c2ff025083f8494d4);
+            
+        
+
+        marker_1242e43210137a3681532c541d5faca3.bindPopup(popup_54b70bb121515f9524f068493bae4bfe)
+        ;
+
+        
+    
+    
+            marker_1242e43210137a3681532c541d5faca3.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_dd79143fc73b5c4908b19576b2c0826a = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_5eb87bf2f0a73a25257b70f6928c29e5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_887355cad917100888327571ef546e54 = $(`<div id="html_887355cad917100888327571ef546e54" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:59:49<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención usada como de paso <br>     <strong>Foto:</strong> JPEG_20250529_140207_2599217621221603712.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_140207_2599217621221603712.jpg" width="200"><br></div>`)[0];
+                popup_5eb87bf2f0a73a25257b70f6928c29e5.setContent(html_887355cad917100888327571ef546e54);
+            
+        
+
+        marker_dd79143fc73b5c4908b19576b2c0826a.bindPopup(popup_5eb87bf2f0a73a25257b70f6928c29e5)
+        ;
+
+        
+    
+    
+            marker_dd79143fc73b5c4908b19576b2c0826a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9bc2e94d3f3ea8e19dc39c3c6d2a3ecb = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ca3a6ce6d750e7dfbffd56a9e37e4289 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8e41fbc6da8ded004eef8ed7e15e31ac = $(`<div id="html_8e41fbc6da8ded004eef8ed7e15e31ac" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:56:27<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención <br>     <strong>Foto:</strong> JPEG_20250529_135923_6799626718709450806.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_135923_6799626718709450806.jpg" width="200"><br></div>`)[0];
+                popup_ca3a6ce6d750e7dfbffd56a9e37e4289.setContent(html_8e41fbc6da8ded004eef8ed7e15e31ac);
+            
+        
+
+        marker_9bc2e94d3f3ea8e19dc39c3c6d2a3ecb.bindPopup(popup_ca3a6ce6d750e7dfbffd56a9e37e4289)
+        ;
+
+        
+    
+    
+            marker_9bc2e94d3f3ea8e19dc39c3c6d2a3ecb.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0b802f5c7a3cf1b7438ae2f3930c4922 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8cddc8d568d1cd17c45a79b369d8d32a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ea95eeef4240a394470902ba47ea18e6 = $(`<div id="html_ea95eeef4240a394470902ba47ea18e6" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:51:40<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con Cadena de aisladores de 7 discos únicamente en un costado del circuito de la mitad para mantener espacio al dps<br>     <strong>Foto:</strong> JPEG_20250529_135603_7718619326095945896.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_135603_7718619326095945896.jpg" width="200"><br></div>`)[0];
+                popup_8cddc8d568d1cd17c45a79b369d8d32a.setContent(html_ea95eeef4240a394470902ba47ea18e6);
+            
+        
+
+        marker_0b802f5c7a3cf1b7438ae2f3930c4922.bindPopup(popup_8cddc8d568d1cd17c45a79b369d8d32a)
+        ;
+
+        
+    
+    
+            marker_0b802f5c7a3cf1b7438ae2f3930c4922.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_754a2ef35e250189019222056c3c9dea = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e70d91cedd507d06c456e4392ba29a53 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c9d81e4195de9ac70008c6adf6d65d86 = $(`<div id="html_c9d81e4195de9ac70008c6adf6d65d86" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:47:16<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_135118_4966104742045652412.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_135118_4966104742045652412.jpg" width="200"><br></div>`)[0];
+                popup_e70d91cedd507d06c456e4392ba29a53.setContent(html_c9d81e4195de9ac70008c6adf6d65d86);
+            
+        
+
+        marker_754a2ef35e250189019222056c3c9dea.bindPopup(popup_e70d91cedd507d06c456e4392ba29a53)
+        ;
+
+        
+    
+    
+            marker_754a2ef35e250189019222056c3c9dea.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c7a4be20a68f86f98f117315e846db15 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_085ea1dc22fa37af71ade9fe184c2067 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5c37e9eb717aca3e9c31322e7e441822 = $(`<div id="html_5c37e9eb717aca3e9c31322e7e441822" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:41:18<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_134644_8673034791603158087.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_134644_8673034791603158087.jpg" width="200"><br></div>`)[0];
+                popup_085ea1dc22fa37af71ade9fe184c2067.setContent(html_5c37e9eb717aca3e9c31322e7e441822);
+            
+        
+
+        marker_c7a4be20a68f86f98f117315e846db15.bindPopup(popup_085ea1dc22fa37af71ade9fe184c2067)
+        ;
+
+        
+    
+    
+            marker_c7a4be20a68f86f98f117315e846db15.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_09f63e1d91b59a81fd702ebc8b172f3e = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ad4c93d983cdb2f43d0b989efb71e059 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5df5bd8812cc4434073e2ffd4a238148 = $(`<div id="html_5df5bd8812cc4434073e2ffd4a238148" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:36:59<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con derivación para cambio de ángulo <br>     <strong>Foto:</strong> JPEG_20250529_134103_8566367019606310245.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_134103_8566367019606310245.jpg" width="200"><br></div>`)[0];
+                popup_ad4c93d983cdb2f43d0b989efb71e059.setContent(html_5df5bd8812cc4434073e2ffd4a238148);
+            
+        
+
+        marker_09f63e1d91b59a81fd702ebc8b172f3e.bindPopup(popup_ad4c93d983cdb2f43d0b989efb71e059)
+        ;
+
+        
+    
+    
+            marker_09f63e1d91b59a81fd702ebc8b172f3e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_848e7a0be95cfe85944e7f41ca64fae0 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_32707c3ae3083b86de6a0ce1cff2d500 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a02d14895c585e63e1ceeb0e1446b6b = $(`<div id="html_7a02d14895c585e63e1ceeb0e1446b6b" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:33:14<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_133647_6792041280144362013.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_133647_6792041280144362013.jpg" width="200"><br></div>`)[0];
+                popup_32707c3ae3083b86de6a0ce1cff2d500.setContent(html_7a02d14895c585e63e1ceeb0e1446b6b);
+            
+        
+
+        marker_848e7a0be95cfe85944e7f41ca64fae0.bindPopup(popup_32707c3ae3083b86de6a0ce1cff2d500)
+        ;
+
+        
+    
+    
+            marker_848e7a0be95cfe85944e7f41ca64fae0.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c8e4f5cfce5d31767f57fdc70cbd0e58 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ca6eb2cefbbe5322b77ddf2e90355a55 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_12c53475963bb981c500ebe143f959ef = $(`<div id="html_12c53475963bb981c500ebe143f959ef" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:29:11<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en derivación para cambio de ángulo, 2 niveles de crucetas <br>     <strong>Foto:</strong> JPEG_20250529_133254_4478233415385643357.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_133254_4478233415385643357.jpg" width="200"><br></div>`)[0];
+                popup_ca6eb2cefbbe5322b77ddf2e90355a55.setContent(html_12c53475963bb981c500ebe143f959ef);
+            
+        
+
+        marker_c8e4f5cfce5d31767f57fdc70cbd0e58.bindPopup(popup_ca6eb2cefbbe5322b77ddf2e90355a55)
+        ;
+
+        
+    
+    
+            marker_c8e4f5cfce5d31767f57fdc70cbd0e58.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4210a1370b686fba285b635749e1d034 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_b7e1bb9c92b09cf576ef18ca262d5af9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5a9e532432fd47e2b15f7db6dc1953b3 = $(`<div id="html_5a9e532432fd47e2b15f7db6dc1953b3" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 13:22:46<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso <br>     <strong>Foto:</strong> JPEG_20250529_132852_718152561367039341.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_132852_718152561367039341.jpg" width="200"><br></div>`)[0];
+                popup_b7e1bb9c92b09cf576ef18ca262d5af9.setContent(html_5a9e532432fd47e2b15f7db6dc1953b3);
+            
+        
+
+        marker_4210a1370b686fba285b635749e1d034.bindPopup(popup_b7e1bb9c92b09cf576ef18ca262d5af9)
+        ;
+
+        
+    
+    
+            marker_4210a1370b686fba285b635749e1d034.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0cf553125e3e8fa50a26617b7466880f = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_138e8923d4706bc5f15e4e4b563c9a77 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9d499ba8763df2fa89b4b4ef3955ddca = $(`<div id="html_9d499ba8763df2fa89b4b4ef3955ddca" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:54:40<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura P-40b es una estructura de tres postes con dos juegos de pt y 1 de ct, con reconectador Noja y dos juegos de seccionadores monopolares <br>     <strong>Foto:</strong> JPEG_20250529_132202_136793534350056513.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_132202_136793534350056513.jpg" width="200"><br></div>`)[0];
+                popup_138e8923d4706bc5f15e4e4b563c9a77.setContent(html_9d499ba8763df2fa89b4b4ef3955ddca);
+            
+        
+
+        marker_0cf553125e3e8fa50a26617b7466880f.bindPopup(popup_138e8923d4706bc5f15e4e4b563c9a77)
+        ;
+
+        
+    
+    
+            marker_0cf553125e3e8fa50a26617b7466880f.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4e853cab740cb3c346926d467bf99e58 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_d6ca3f78f4e639a8e8a177555c67a989 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d888f343c6dde66eab8bf881b3f29531 = $(`<div id="html_d888f343c6dde66eab8bf881b3f29531" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:46:31<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cruceta inferior para seccionadores monopolares y subterranización<br>     <strong>Foto:</strong> JPEG_20250529_115428_8028929747988986950.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_115428_8028929747988986950.jpg" width="200"><br></div>`)[0];
+                popup_d6ca3f78f4e639a8e8a177555c67a989.setContent(html_d888f343c6dde66eab8bf881b3f29531);
+            
+        
+
+        marker_4e853cab740cb3c346926d467bf99e58.bindPopup(popup_d6ca3f78f4e639a8e8a177555c67a989)
+        ;
+
+        
+    
+    
+            marker_4e853cab740cb3c346926d467bf99e58.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7b918f5e9e201bae3bcc3aecf56b4712 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_03ef68acb75c4867c61be0034d4baf08 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60bbe8e158bdf501ce9614334849d07d = $(`<div id="html_60bbe8e158bdf501ce9614334849d07d" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:39:27<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Condiciones similares a la estructura 38b<br>     <strong>Foto:</strong> JPEG_20250529_114353_5554892380199036354.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_114353_5554892380199036354.jpg" width="200"><br></div>`)[0];
+                popup_03ef68acb75c4867c61be0034d4baf08.setContent(html_60bbe8e158bdf501ce9614334849d07d);
+            
+        
+
+        marker_7b918f5e9e201bae3bcc3aecf56b4712.bindPopup(popup_03ef68acb75c4867c61be0034d4baf08)
+        ;
+
+        
+    
+    
+            marker_7b918f5e9e201bae3bcc3aecf56b4712.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fe8879e0f6fca6a5d6aac2c6af7bb994 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_7729882a1a43aad21ba58c393ea69c52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a9dfd70a4c28386f8d403df342f96578 = $(`<div id="html_a9dfd70a4c28386f8d403df342f96578" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:25:34<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con derivación a dos niveles, cruceta superior con cadenas de aisladores que llevan el circuito kitaro -ponyo y el circuito inferior es alimentación de ponyo y está con aisladores de distribución de 8 campanas y doble linepost en los puentes y la cruceta en bandera<br>     <strong>Foto:</strong> JPEG_20250529_113213_3489566892022621792.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_113213_3489566892022621792.jpg" width="200"><br></div>`)[0];
+                popup_7729882a1a43aad21ba58c393ea69c52.setContent(html_a9dfd70a4c28386f8d403df342f96578);
+            
+        
+
+        marker_fe8879e0f6fca6a5d6aac2c6af7bb994.bindPopup(popup_7729882a1a43aad21ba58c393ea69c52)
+        ;
+
+        
+    
+    
+            marker_fe8879e0f6fca6a5d6aac2c6af7bb994.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_83036102de61c447ce7835e2894822c6 = L.marker(
+                [4.3476984, -72.7335938],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_00e43e91e79979b6aab3233c22c93cb5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_21df0186b2979b2c959701f6a5709092 = $(`<div id="html_21df0186b2979b2c959701f6a5709092" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:19:08<br>     <strong>Área:</strong> Ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura indicada como Ponyo 3 _ Tagueada como P-44b. Estructura en derivación hacia pórtico Ponyo 2 <br>     <strong>Foto:</strong> JPEG_20250529_112505_1066024139273866676.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_112505_1066024139273866676.jpg" width="200"><br></div>`)[0];
+                popup_00e43e91e79979b6aab3233c22c93cb5.setContent(html_21df0186b2979b2c959701f6a5709092);
+            
+        
+
+        marker_83036102de61c447ce7835e2894822c6.bindPopup(popup_00e43e91e79979b6aab3233c22c93cb5)
+        ;
+
+        
+    
+    
+            marker_83036102de61c447ce7835e2894822c6.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_87e219d81802a5b9b48ff7cec8d7877e = L.marker(
+                [4.3480413, -72.7349726],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_a6aa67e8d1c9363dbe95767aed541e73 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_95988a0f069691c284f6865cb2dcc5f5 = $(`<div id="html_95988a0f069691c284f6865cb2dcc5f5" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:12:37<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura indicada como Ponyo 2 - Tagueada como P-43b. Estructura de paso con 1 dps <br>     <strong>Foto:</strong> JPEG_20250529_111841_6509353774060614180.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_111841_6509353774060614180.jpg" width="200"><br></div>`)[0];
+                popup_a6aa67e8d1c9363dbe95767aed541e73.setContent(html_95988a0f069691c284f6865cb2dcc5f5);
+            
+        
+
+        marker_87e219d81802a5b9b48ff7cec8d7877e.bindPopup(popup_a6aa67e8d1c9363dbe95767aed541e73)
+        ;
+
+        
+    
+    
+            marker_87e219d81802a5b9b48ff7cec8d7877e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d2da4cd4cdb26a1607ee7700bc71931a = L.marker(
+                [4.3480413, -72.7349726],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_3ae2eafd046da49bf9cee5e7acf58aff = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5b2f8ba04f8fc0be20c032adaca70d37 = $(`<div id="html_5b2f8ba04f8fc0be20c032adaca70d37" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 11:02:01<br>     <strong>Área:</strong> ponyo<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura indicada como Ponyo 1 es la P-42b<br>     <strong>Foto:</strong> JPEG_20250529_111155_8499497625990600369.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_111155_8499497625990600369.jpg" width="200"><br></div>`)[0];
+                popup_3ae2eafd046da49bf9cee5e7acf58aff.setContent(html_5b2f8ba04f8fc0be20c032adaca70d37);
+            
+        
+
+        marker_d2da4cd4cdb26a1607ee7700bc71931a.bindPopup(popup_3ae2eafd046da49bf9cee5e7acf58aff)
+        ;
+
+        
+    
+    
+            marker_d2da4cd4cdb26a1607ee7700bc71931a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_eb5aa0c587d1ae1f5b1c29f8756c6ac3 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_1ce695fca81c12fa9d9ea762ee97f30e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45af31a16fe481d771513d02a5cb131c = $(`<div id="html_45af31a16fe481d771513d02a5cb131c" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:55:33<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura con tres niveles de crucetas para derivación a Ponyo 1, 2 y 3 y otro para continuar a R4<br>     <strong>Foto:</strong> JPEG_20250529_110138_1520293310393144995.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_110138_1520293310393144995.jpg" width="200"><br></div>`)[0];
+                popup_1ce695fca81c12fa9d9ea762ee97f30e.setContent(html_45af31a16fe481d771513d02a5cb131c);
+            
+        
+
+        marker_eb5aa0c587d1ae1f5b1c29f8756c6ac3.bindPopup(popup_1ce695fca81c12fa9d9ea762ee97f30e)
+        ;
+
+        
+    
+    
+            marker_eb5aa0c587d1ae1f5b1c29f8756c6ac3.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_05798cfe62cc098887f901804b9dc878 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_3c9330fa4ddd2342fb5ea97e5523329a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a59da5fd037caac8fc5b029daaf363eb = $(`<div id="html_a59da5fd037caac8fc5b029daaf363eb" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:51:35<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_105511_4739705838980265817.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_105511_4739705838980265817.jpg" width="200"><br></div>`)[0];
+                popup_3c9330fa4ddd2342fb5ea97e5523329a.setContent(html_a59da5fd037caac8fc5b029daaf363eb);
+            
+        
+
+        marker_05798cfe62cc098887f901804b9dc878.bindPopup(popup_3c9330fa4ddd2342fb5ea97e5523329a)
+        ;
+
+        
+    
+    
+            marker_05798cfe62cc098887f901804b9dc878.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_48420fe3f535d41e607ad9dfd35af9f3 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_08a3bbf9057d76e86e5fafb5d2cdd905 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5598c001172743b4021a2e63078a39e1 = $(`<div id="html_5598c001172743b4021a2e63078a39e1" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:47:49<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_105102_2441226171790178111.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_105102_2441226171790178111.jpg" width="200"><br></div>`)[0];
+                popup_08a3bbf9057d76e86e5fafb5d2cdd905.setContent(html_5598c001172743b4021a2e63078a39e1);
+            
+        
+
+        marker_48420fe3f535d41e607ad9dfd35af9f3.bindPopup(popup_08a3bbf9057d76e86e5fafb5d2cdd905)
+        ;
+
+        
+    
+    
+            marker_48420fe3f535d41e607ad9dfd35af9f3.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f021dde78d1f1c2f781b25100762c36 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_afba623809cd0144c325783442da118d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c68af7bcdd1679d0dca1285a77a2c9e0 = $(`<div id="html_c68af7bcdd1679d0dca1285a77a2c9e0" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:43:35<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con 1 dps en fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_104720_1132207361445915588.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_104720_1132207361445915588.jpg" width="200"><br></div>`)[0];
+                popup_afba623809cd0144c325783442da118d.setContent(html_c68af7bcdd1679d0dca1285a77a2c9e0);
+            
+        
+
+        marker_7f021dde78d1f1c2f781b25100762c36.bindPopup(popup_afba623809cd0144c325783442da118d)
+        ;
+
+        
+    
+    
+            marker_7f021dde78d1f1c2f781b25100762c36.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3115c4dc05ea96d7ef43450b5afee1dd = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e0913ee9f6bc2e80d95942fd2009f456 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_123ccf15cb7e93fa912bdd3713b0a26b = $(`<div id="html_123ccf15cb7e93fa912bdd3713b0a26b" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:39:56<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior para 2 dps <br>     <strong>Foto:</strong> JPEG_20250529_104239_849312509971072331.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_104239_849312509971072331.jpg" width="200"><br></div>`)[0];
+                popup_e0913ee9f6bc2e80d95942fd2009f456.setContent(html_123ccf15cb7e93fa912bdd3713b0a26b);
+            
+        
+
+        marker_3115c4dc05ea96d7ef43450b5afee1dd.bindPopup(popup_e0913ee9f6bc2e80d95942fd2009f456)
+        ;
+
+        
+    
+    
+            marker_3115c4dc05ea96d7ef43450b5afee1dd.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6945d8b83cef3a97f1580f0e88ed6106 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e410a7e29dedec19a7c35382006469fc = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4cd3832a66559067f3c8b18244f268c2 = $(`<div id="html_4cd3832a66559067f3c8b18244f268c2" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:38:11<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_103933_5682650873446170000.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_103933_5682650873446170000.jpg" width="200"><br></div>`)[0];
+                popup_e410a7e29dedec19a7c35382006469fc.setContent(html_4cd3832a66559067f3c8b18244f268c2);
+            
+        
+
+        marker_6945d8b83cef3a97f1580f0e88ed6106.bindPopup(popup_e410a7e29dedec19a7c35382006469fc)
+        ;
+
+        
+    
+    
+            marker_6945d8b83cef3a97f1580f0e88ed6106.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_463a27f7ba0087572e37487d4f544a8a = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e84a36c997d985f4c3f9e728c3b53d1b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_73ddd4d2cc10d7630c0fe33e085da942 = $(`<div id="html_73ddd4d2cc10d7630c0fe33e085da942" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:34:21<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_103756_3169237698099990394.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_103756_3169237698099990394.jpg" width="200"><br></div>`)[0];
+                popup_e84a36c997d985f4c3f9e728c3b53d1b.setContent(html_73ddd4d2cc10d7630c0fe33e085da942);
+            
+        
+
+        marker_463a27f7ba0087572e37487d4f544a8a.bindPopup(popup_e84a36c997d985f4c3f9e728c3b53d1b)
+        ;
+
+        
+    
+    
+            marker_463a27f7ba0087572e37487d4f544a8a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_3a6adc267fd19f8d7e83826f53fe8d7e = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_dae26ebfc27965109be3d326f5fcc73a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0d3d3533a9a831f29b55bccaf1e89ecb = $(`<div id="html_0d3d3533a9a831f29b55bccaf1e89ecb" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:29:09<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_103238_1349948407643088194.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_103238_1349948407643088194.jpg" width="200"><br></div>`)[0];
+                popup_dae26ebfc27965109be3d326f5fcc73a.setContent(html_0d3d3533a9a831f29b55bccaf1e89ecb);
+            
+        
+
+        marker_3a6adc267fd19f8d7e83826f53fe8d7e.bindPopup(popup_dae26ebfc27965109be3d326f5fcc73a)
+        ;
+
+        
+    
+    
+            marker_3a6adc267fd19f8d7e83826f53fe8d7e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b3906f771d79d185033f5951430dc53b = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ebd80f392ac40d7818e54c63b861dd5e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_8a8c4338342db8832770af7fe8dd9737 = $(`<div id="html_8a8c4338342db8832770af7fe8dd9737" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:26:35<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_102857_1654399956892168836.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_102857_1654399956892168836.jpg" width="200"><br></div>`)[0];
+                popup_ebd80f392ac40d7818e54c63b861dd5e.setContent(html_8a8c4338342db8832770af7fe8dd9737);
+            
+        
+
+        marker_b3906f771d79d185033f5951430dc53b.bindPopup(popup_ebd80f392ac40d7818e54c63b861dd5e)
+        ;
+
+        
+    
+    
+            marker_b3906f771d79d185033f5951430dc53b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_850e6ac31b8fc4ad8c03971aedf950db = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_04364d780d841a3b0e212dc263ff9a39 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3d08d7094fb8258d3a75ccc70b85287 = $(`<div id="html_f3d08d7094fb8258d3a75ccc70b85287" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:21:35<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_102604_7536012972668764454.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_102604_7536012972668764454.jpg" width="200"><br></div>`)[0];
+                popup_04364d780d841a3b0e212dc263ff9a39.setContent(html_f3d08d7094fb8258d3a75ccc70b85287);
+            
+        
+
+        marker_850e6ac31b8fc4ad8c03971aedf950db.bindPopup(popup_04364d780d841a3b0e212dc263ff9a39)
+        ;
+
+        
+    
+    
+            marker_850e6ac31b8fc4ad8c03971aedf950db.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_2f3691169ca4e57c23a1d292cf2d686a = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_79ceeade47208701717bd37b0a716530 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a1b74a66c4e8380072f294351ceaff8a = $(`<div id="html_a1b74a66c4e8380072f294351ceaff8a" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:17:25<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_102106_440500365156357914.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_102106_440500365156357914.jpg" width="200"><br></div>`)[0];
+                popup_79ceeade47208701717bd37b0a716530.setContent(html_a1b74a66c4e8380072f294351ceaff8a);
+            
+        
+
+        marker_2f3691169ca4e57c23a1d292cf2d686a.bindPopup(popup_79ceeade47208701717bd37b0a716530)
+        ;
+
+        
+    
+    
+            marker_2f3691169ca4e57c23a1d292cf2d686a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d000e31acbdf63d9062410e4c0db4f09 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_62c0e28876003ad27d1f263f5661cb66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_02cd8bd21ec4314ab3d3862f80e400bf = $(`<div id="html_02cd8bd21ec4314ab3d3862f80e400bf" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:15:51<br>     <strong>Área:</strong> ponyo <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_101704_6087013665900711442.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_101704_6087013665900711442.jpg" width="200"><br></div>`)[0];
+                popup_62c0e28876003ad27d1f263f5661cb66.setContent(html_02cd8bd21ec4314ab3d3862f80e400bf);
+            
+        
+
+        marker_d000e31acbdf63d9062410e4c0db4f09.bindPopup(popup_62c0e28876003ad27d1f263f5661cb66)
+        ;
+
+        
+    
+    
+            marker_d000e31acbdf63d9062410e4c0db4f09.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e90cf5ede366abe74f3dc1ecb9a8cc9a = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_53748d6f95d863ce93012b377d039a19 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b98894ce15882fcf89cb51fe97bc7f78 = $(`<div id="html_b98894ce15882fcf89cb51fe97bc7f78" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:10:04<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de retención con 1 dps en la fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_101500_1693593977334683380.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_101500_1693593977334683380.jpg" width="200"><br></div>`)[0];
+                popup_53748d6f95d863ce93012b377d039a19.setContent(html_b98894ce15882fcf89cb51fe97bc7f78);
+            
+        
+
+        marker_e90cf5ede366abe74f3dc1ecb9a8cc9a.bindPopup(popup_53748d6f95d863ce93012b377d039a19)
+        ;
+
+        
+    
+    
+            marker_e90cf5ede366abe74f3dc1ecb9a8cc9a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8134d149aa2fb17b05d89f8a5dc49d2c = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_f0ace81feaa79578688b0296525fa27b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78e4803a58263b7819c067b5c70f5925 = $(`<div id="html_78e4803a58263b7819c067b5c70f5925" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 10:02:52<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con derivación en dos niveles de crucetas y 2 dps en fases de los extremos <br>     <strong>Foto:</strong> JPEG_20250529_100912_1463826280761664219.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_100912_1463826280761664219.jpg" width="200"><br></div>`)[0];
+                popup_f0ace81feaa79578688b0296525fa27b.setContent(html_78e4803a58263b7819c067b5c70f5925);
+            
+        
+
+        marker_8134d149aa2fb17b05d89f8a5dc49d2c.bindPopup(popup_f0ace81feaa79578688b0296525fa27b)
+        ;
+
+        
+    
+    
+            marker_8134d149aa2fb17b05d89f8a5dc49d2c.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_acd9b6b6336b5c93184432e462d5cb0e = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_743613be8a4e47a2161ac8a2d5910c30 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_750292319826df231363de810de6c216 = $(`<div id="html_750292319826df231363de810de6c216" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:59:16<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_100231_4114383585035613112.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_100231_4114383585035613112.jpg" width="200"><br></div>`)[0];
+                popup_743613be8a4e47a2161ac8a2d5910c30.setContent(html_750292319826df231363de810de6c216);
+            
+        
+
+        marker_acd9b6b6336b5c93184432e462d5cb0e.bindPopup(popup_743613be8a4e47a2161ac8a2d5910c30)
+        ;
+
+        
+    
+    
+            marker_acd9b6b6336b5c93184432e462d5cb0e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9958df7b717517bb8d304443b9af55dd = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_272597aa656979887148e73b4de7c9a5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44e7f49e32251b3da5feadbc5f18c85e = $(`<div id="html_44e7f49e32251b3da5feadbc5f18c85e" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:54:33<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con 1 dps en la fase de la mitad (quitar dps que no va en la estructura 20b)<br>     <strong>Foto:</strong> JPEG_20250529_095823_9132705476917176778.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_095823_9132705476917176778.jpg" width="200"><br></div>`)[0];
+                popup_272597aa656979887148e73b4de7c9a5.setContent(html_44e7f49e32251b3da5feadbc5f18c85e);
+            
+        
+
+        marker_9958df7b717517bb8d304443b9af55dd.bindPopup(popup_272597aa656979887148e73b4de7c9a5)
+        ;
+
+        
+    
+    
+            marker_9958df7b717517bb8d304443b9af55dd.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf9e432e21c64d40b24f5206a053c02b = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_dda619e1f478a3edc57dc23c282c80d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a7cf38304bb8d1f17a1d872ae49b1d28 = $(`<div id="html_a7cf38304bb8d1f17a1d872ae49b1d28" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:50:05<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con 2 dps<br>     <strong>Foto:</strong> JPEG_20250529_095413_5060998276320219061.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_095413_5060998276320219061.jpg" width="200"><br></div>`)[0];
+                popup_dda619e1f478a3edc57dc23c282c80d4.setContent(html_a7cf38304bb8d1f17a1d872ae49b1d28);
+            
+        
+
+        marker_cf9e432e21c64d40b24f5206a053c02b.bindPopup(popup_dda619e1f478a3edc57dc23c282c80d4)
+        ;
+
+        
+    
+    
+            marker_cf9e432e21c64d40b24f5206a053c02b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_260cddee42af0ba59018efe2648ff630 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_bd7aaf8e7eb8ce9be2cc9283ec8860d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d04be7d11e0141f872feaf53a48ed035 = $(`<div id="html_d04be7d11e0141f872feaf53a48ed035" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:45:07<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 7 discos en fase de la mitad y 1 dps<br>     <strong>Foto:</strong> JPEG_20250529_094858_1121545397108757117.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_094858_1121545397108757117.jpg" width="200"><br></div>`)[0];
+                popup_bd7aaf8e7eb8ce9be2cc9283ec8860d6.setContent(html_d04be7d11e0141f872feaf53a48ed035);
+            
+        
+
+        marker_260cddee42af0ba59018efe2648ff630.bindPopup(popup_bd7aaf8e7eb8ce9be2cc9283ec8860d6)
+        ;
+
+        
+    
+    
+            marker_260cddee42af0ba59018efe2648ff630.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cf325512ed2495da8a7d850ce9c883ef = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_21403b0bcba4371e0b62f16b2eb08d35 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6c1a1a71ae296269bce4b3ad808fd4c3 = $(`<div id="html_6c1a1a71ae296269bce4b3ad808fd4c3" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:41:57<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_094416_7562873366769988161.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_094416_7562873366769988161.jpg" width="200"><br></div>`)[0];
+                popup_21403b0bcba4371e0b62f16b2eb08d35.setContent(html_6c1a1a71ae296269bce4b3ad808fd4c3);
+            
+        
+
+        marker_cf325512ed2495da8a7d850ce9c883ef.bindPopup(popup_21403b0bcba4371e0b62f16b2eb08d35)
+        ;
+
+        
+    
+    
+            marker_cf325512ed2495da8a7d850ce9c883ef.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_1ead4d918b42b6423849ef221a2ffed9 = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_3dca4705268839837e14430eae2004c7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f928620e47261bb237b49835d6affde = $(`<div id="html_2f928620e47261bb237b49835d6affde" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:38:04<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso <br>     <strong>Foto:</strong> JPEG_20250529_094117_6866115209231656029.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_094117_6866115209231656029.jpg" width="200"><br></div>`)[0];
+                popup_3dca4705268839837e14430eae2004c7.setContent(html_2f928620e47261bb237b49835d6affde);
+            
+        
+
+        marker_1ead4d918b42b6423849ef221a2ffed9.bindPopup(popup_3dca4705268839837e14430eae2004c7)
+        ;
+
+        
+    
+    
+            marker_1ead4d918b42b6423849ef221a2ffed9.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a1e163eb1fc8f63d9fdb53b29ff9fca = L.marker(
+                [4.344016, -72.724239],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_af52ef5a8f449998ae8d34bac1173e1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_86538df937a0c6e689e19c6fd5b04224 = $(`<div id="html_86538df937a0c6e689e19c6fd5b04224" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:33:21<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con 1 dps<br>     <strong>Foto:</strong> JPEG_20250529_093709_4049766190504539419.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_093709_4049766190504539419.jpg" width="200"><br></div>`)[0];
+                popup_af52ef5a8f449998ae8d34bac1173e1f.setContent(html_86538df937a0c6e689e19c6fd5b04224);
+            
+        
+
+        marker_4a1e163eb1fc8f63d9fdb53b29ff9fca.bindPopup(popup_af52ef5a8f449998ae8d34bac1173e1f)
+        ;
+
+        
+    
+    
+            marker_4a1e163eb1fc8f63d9fdb53b29ff9fca.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec5679a0e6c01b7410e65c1ad9ae4350 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_9e68e3cf22ce326ecb3475ca71c3185b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5bf5fceb625459febd528294604f8f15 = $(`<div id="html_5bf5fceb625459febd528294604f8f15" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:28:33<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 7 discos en circuito de la mitad y 2 dps en fases externas <br>     <strong>Foto:</strong> JPEG_20250529_093236_4069446730928445085.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_093236_4069446730928445085.jpg" width="200"><br></div>`)[0];
+                popup_9e68e3cf22ce326ecb3475ca71c3185b.setContent(html_5bf5fceb625459febd528294604f8f15);
+            
+        
+
+        marker_ec5679a0e6c01b7410e65c1ad9ae4350.bindPopup(popup_9e68e3cf22ce326ecb3475ca71c3185b)
+        ;
+
+        
+    
+    
+            marker_ec5679a0e6c01b7410e65c1ad9ae4350.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_73205dee49ac950c477aa321f21f2287 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_1812157d9ea736d117b739f6d78c82ef = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_be7305b3713e3221d69c9e2a0fc0daf0 = $(`<div id="html_be7305b3713e3221d69c9e2a0fc0daf0" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:25:53<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_092809_2440575202835686927.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_092809_2440575202835686927.jpg" width="200"><br></div>`)[0];
+                popup_1812157d9ea736d117b739f6d78c82ef.setContent(html_be7305b3713e3221d69c9e2a0fc0daf0);
+            
+        
+
+        marker_73205dee49ac950c477aa321f21f2287.bindPopup(popup_1812157d9ea736d117b739f6d78c82ef)
+        ;
+
+        
+    
+    
+            marker_73205dee49ac950c477aa321f21f2287.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_9a9a8440594e4479d9133c06e4262e85 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_c9f081d95a591d6eb1dcc22895d31371 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_870610eb02015089d4122aa9713afcdd = $(`<div id="html_870610eb02015089d4122aa9713afcdd" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:23:05<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso <br>     <strong>Foto:</strong> JPEG_20250529_092508_9165801710102767758.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_092508_9165801710102767758.jpg" width="200"><br></div>`)[0];
+                popup_c9f081d95a591d6eb1dcc22895d31371.setContent(html_870610eb02015089d4122aa9713afcdd);
+            
+        
+
+        marker_9a9a8440594e4479d9133c06e4262e85.bindPopup(popup_c9f081d95a591d6eb1dcc22895d31371)
+        ;
+
+        
+    
+    
+            marker_9a9a8440594e4479d9133c06e4262e85.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_60244ef2808683579ffac33e00f6d7f1 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_498397d66858c4f0b0c69952083c0e52 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d28cccf1cda62363e1b86f954b18c095 = $(`<div id="html_d28cccf1cda62363e1b86f954b18c095" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:18:31<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 7 discos y 1 dps en fase de la mitad <br>     <strong>Foto:</strong> JPEG_20250529_092248_7598198883787140631.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_092248_7598198883787140631.jpg" width="200"><br></div>`)[0];
+                popup_498397d66858c4f0b0c69952083c0e52.setContent(html_d28cccf1cda62363e1b86f954b18c095);
+            
+        
+
+        marker_60244ef2808683579ffac33e00f6d7f1.bindPopup(popup_498397d66858c4f0b0c69952083c0e52)
+        ;
+
+        
+    
+    
+            marker_60244ef2808683579ffac33e00f6d7f1.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5b7b915cf446fa028fc67c0e22104d08 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8d2d0b0bbdffccb98c0ddaa21b6772e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9b5caaff192459f63dc071181ba8d23e = $(`<div id="html_9b5caaff192459f63dc071181ba8d23e" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:14:49<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con 2 dps en cruceta superior <br>     <strong>Foto:</strong> JPEG_20250529_091809_1495094679298722573.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_091809_1495094679298722573.jpg" width="200"><br></div>`)[0];
+                popup_8d2d0b0bbdffccb98c0ddaa21b6772e3.setContent(html_9b5caaff192459f63dc071181ba8d23e);
+            
+        
+
+        marker_5b7b915cf446fa028fc67c0e22104d08.bindPopup(popup_8d2d0b0bbdffccb98c0ddaa21b6772e3)
+        ;
+
+        
+    
+    
+            marker_5b7b915cf446fa028fc67c0e22104d08.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_189ce48bd218319f50c89fad6c25ee26 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_4be5c37967135d6a37c8d60acaa745b3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d988e587434d6e7cca8c2afacb03ffc8 = $(`<div id="html_d988e587434d6e7cca8c2afacb03ffc8" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:12:30<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_091424_875324357609026273.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_091424_875324357609026273.jpg" width="200"><br></div>`)[0];
+                popup_4be5c37967135d6a37c8d60acaa745b3.setContent(html_d988e587434d6e7cca8c2afacb03ffc8);
+            
+        
+
+        marker_189ce48bd218319f50c89fad6c25ee26.bindPopup(popup_4be5c37967135d6a37c8d60acaa745b3)
+        ;
+
+        
+    
+    
+            marker_189ce48bd218319f50c89fad6c25ee26.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_19596ea2022e8f43eaf9759a3d6c8dbb = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_2799828b0cf94114ef4339141071d5ad = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0b4e4ca7f1b9cbc83f2d2fd548549124 = $(`<div id="html_0b4e4ca7f1b9cbc83f2d2fd548549124" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:09:29<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_091212_7306467952059872719.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_091212_7306467952059872719.jpg" width="200"><br></div>`)[0];
+                popup_2799828b0cf94114ef4339141071d5ad.setContent(html_0b4e4ca7f1b9cbc83f2d2fd548549124);
+            
+        
+
+        marker_19596ea2022e8f43eaf9759a3d6c8dbb.bindPopup(popup_2799828b0cf94114ef4339141071d5ad)
+        ;
+
+        
+    
+    
+            marker_19596ea2022e8f43eaf9759a3d6c8dbb.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_87f393d5388aeff21e1ba98cff0d96f1 = L.marker(
+                [4.341448, -72.7165725],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ff83098095def4c3b4093545fd81af1c = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e75e4206cfa84ab298155bda5e9786bc = $(`<div id="html_e75e4206cfa84ab298155bda5e9786bc" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 09:04:44<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de la fase de la mitad con 7 discos y un dps en esta fase<br>     <strong>Foto:</strong> JPEG_20250529_090911_7922809737620471129.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_090911_7922809737620471129.jpg" width="200"><br></div>`)[0];
+                popup_ff83098095def4c3b4093545fd81af1c.setContent(html_e75e4206cfa84ab298155bda5e9786bc);
+            
+        
+
+        marker_87f393d5388aeff21e1ba98cff0d96f1.bindPopup(popup_ff83098095def4c3b4093545fd81af1c)
+        ;
+
+        
+    
+    
+            marker_87f393d5388aeff21e1ba98cff0d96f1.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_90f0a51058634fbf219905c13e63a7ab = L.marker(
+                [4.3401556, -72.7176487],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_cfda2e154d9f236c73cbdd9b65cca5fa = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ada606ec4352469d14cd7941548cc038 = $(`<div id="html_ada606ec4352469d14cd7941548cc038" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 08:58:59<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250529_090113_6405176172124177016.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_090113_6405176172124177016.jpg" width="200"><br></div>`)[0];
+                popup_cfda2e154d9f236c73cbdd9b65cca5fa.setContent(html_ada606ec4352469d14cd7941548cc038);
+            
+        
+
+        marker_90f0a51058634fbf219905c13e63a7ab.bindPopup(popup_cfda2e154d9f236c73cbdd9b65cca5fa)
+        ;
+
+        
+    
+    
+            marker_90f0a51058634fbf219905c13e63a7ab.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b9804611373932fef6f13dcd4caf6530 = L.marker(
+                [4.3401556, -72.7176487],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_52762275d9aa5843f0d4514e0aa05a9f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_db12806471290daab952f352dc28ce70 = $(`<div id="html_db12806471290daab952f352dc28ce70" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 08:54:46<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con doble aislador por fase<br>     <strong>Foto:</strong> JPEG_20250529_085845_1855586917578367899.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_085845_1855586917578367899.jpg" width="200"><br></div>`)[0];
+                popup_52762275d9aa5843f0d4514e0aa05a9f.setContent(html_db12806471290daab952f352dc28ce70);
+            
+        
+
+        marker_b9804611373932fef6f13dcd4caf6530.bindPopup(popup_52762275d9aa5843f0d4514e0aa05a9f)
+        ;
+
+        
+    
+    
+            marker_b9804611373932fef6f13dcd4caf6530.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a176478663ee0a759545a6ffdd6ea819 = L.marker(
+                [4.3410379, -72.7159764],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_c7b927de6da1f7f62d79d050cf82a009 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4a46e0f6b19342da2f67afdb24e92790 = $(`<div id="html_4a46e0f6b19342da2f67afdb24e92790" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 08:15:25<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura que cuenta con 2 circuitos, uno de la red actual kitaro -ponyo  con doble aislador (a desmantelar) y el que quedará en la conexión con el pórtico R9<br>     <strong>Foto:</strong> JPEG_20250529_082805_4132922653516602039.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_082805_4132922653516602039.jpg" width="200"><br></div>`)[0];
+                popup_c7b927de6da1f7f62d79d050cf82a009.setContent(html_4a46e0f6b19342da2f67afdb24e92790);
+            
+        
+
+        marker_a176478663ee0a759545a6ffdd6ea819.bindPopup(popup_c7b927de6da1f7f62d79d050cf82a009)
+        ;
+
+        
+    
+    
+            marker_a176478663ee0a759545a6ffdd6ea819.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_046b87384471ce77dddec23e1c58f3a2 = L.marker(
+                [4.3413316, -72.7162554],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_48cd77245a11e121b349942624427522 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_46ba92909edcb5fd3943215ec3d56882 = $(`<div id="html_46ba92909edcb5fd3943215ec3d56882" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-29 08:10:18<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con doble aislador por fase<br>     <strong>Foto:</strong> JPEG_20250529_081505_1173758018372641748.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250529_081505_1173758018372641748.jpg" width="200"><br></div>`)[0];
+                popup_48cd77245a11e121b349942624427522.setContent(html_46ba92909edcb5fd3943215ec3d56882);
+            
+        
+
+        marker_046b87384471ce77dddec23e1c58f3a2.bindPopup(popup_48cd77245a11e121b349942624427522)
+        ;
+
+        
+    
+    
+            marker_046b87384471ce77dddec23e1c58f3a2.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_67ede371fb11a0202730431d8646073d = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_6d816b98c2a8ece3a82769b1d1e130a8 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc47af3771daa0c7b7268611176d08f0 = $(`<div id="html_bc47af3771daa0c7b7268611176d08f0" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 17:04:19<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 7 discos en fase de la mitad, las 3 fases sobre la misma cruceta y solo 2 fases con dps <br>     <strong>Foto:</strong> JPEG_20250528_170823_2128603445612135102.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_170823_2128603445612135102.jpg" width="200"><br></div>`)[0];
+                popup_6d816b98c2a8ece3a82769b1d1e130a8.setContent(html_bc47af3771daa0c7b7268611176d08f0);
+            
+        
+
+        marker_67ede371fb11a0202730431d8646073d.bindPopup(popup_6d816b98c2a8ece3a82769b1d1e130a8)
+        ;
+
+        
+    
+    
+            marker_67ede371fb11a0202730431d8646073d.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_86c578f77849cfc0b552877bbc0781b1 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_6650e3ebedf3549670893a9515da88bf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e9a0415cfc76a2efb99dc66dff2944c2 = $(`<div id="html_e9a0415cfc76a2efb99dc66dff2944c2" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 17:01:17<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250528_170355_8410039007185214752.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_170355_8410039007185214752.jpg" width="200"><br></div>`)[0];
+                popup_6650e3ebedf3549670893a9515da88bf.setContent(html_e9a0415cfc76a2efb99dc66dff2944c2);
+            
+        
+
+        marker_86c578f77849cfc0b552877bbc0781b1.bindPopup(popup_6650e3ebedf3549670893a9515da88bf)
+        ;
+
+        
+    
+    
+            marker_86c578f77849cfc0b552877bbc0781b1.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c29a9f20a388a9676b9f4227e9a3f75c = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_7c2e98d706738df486a6875923a75048 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e27c7ee2ee8acdbe9bf1d6a6e55ac601 = $(`<div id="html_e27c7ee2ee8acdbe9bf1d6a6e55ac601" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:58:16<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250528_170101_1694309715662597609.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_170101_1694309715662597609.jpg" width="200"><br></div>`)[0];
+                popup_7c2e98d706738df486a6875923a75048.setContent(html_e27c7ee2ee8acdbe9bf1d6a6e55ac601);
+            
+        
+
+        marker_c29a9f20a388a9676b9f4227e9a3f75c.bindPopup(popup_7c2e98d706738df486a6875923a75048)
+        ;
+
+        
+    
+    
+            marker_c29a9f20a388a9676b9f4227e9a3f75c.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4f287bfe7d0f81e913cd96f191739a24 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_c1cf58501bfd30c285d167422aa5fb9b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_605d605630715a62ac006f6e3bae2cee = $(`<div id="html_605d605630715a62ac006f6e3bae2cee" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:54:52<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250528_165740_6250787727433569341.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_165740_6250787727433569341.jpg" width="200"><br></div>`)[0];
+                popup_c1cf58501bfd30c285d167422aa5fb9b.setContent(html_605d605630715a62ac006f6e3bae2cee);
+            
+        
+
+        marker_4f287bfe7d0f81e913cd96f191739a24.bindPopup(popup_c1cf58501bfd30c285d167422aa5fb9b)
+        ;
+
+        
+    
+    
+            marker_4f287bfe7d0f81e913cd96f191739a24.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5becd5e23c0860a2617c2ffe5490f3e5 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_a25a0c95fb9fb78a0000e85440f708d4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2f79109aec8d9fa7ca20842a57438faf = $(`<div id="html_2f79109aec8d9fa7ca20842a57438faf" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:49:45<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura en retención con cadena de aisladores de 7 discos en fase de la mitad y linepost para el puente, 2 dps en fases externas <br>     <strong>Foto:</strong> JPEG_20250528_165427_2826518289468577966.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_165427_2826518289468577966.jpg" width="200"><br></div>`)[0];
+                popup_a25a0c95fb9fb78a0000e85440f708d4.setContent(html_2f79109aec8d9fa7ca20842a57438faf);
+            
+        
+
+        marker_5becd5e23c0860a2617c2ffe5490f3e5.bindPopup(popup_a25a0c95fb9fb78a0000e85440f708d4)
+        ;
+
+        
+    
+    
+            marker_5becd5e23c0860a2617c2ffe5490f3e5.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fa26a2ebfcb5ebf3793641c5beeb1890 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_bc4df14d0c62b88d4f5b5a338158cb60 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9ba250f875212996b7ce4bb177881796 = $(`<div id="html_9ba250f875212996b7ce4bb177881796" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:46:33<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso evidente <br>     <strong>Foto:</strong> JPEG_20250528_164918_6282252381538445734.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_164918_6282252381538445734.jpg" width="200"><br></div>`)[0];
+                popup_bc4df14d0c62b88d4f5b5a338158cb60.setContent(html_9ba250f875212996b7ce4bb177881796);
+            
+        
+
+        marker_fa26a2ebfcb5ebf3793641c5beeb1890.bindPopup(popup_bc4df14d0c62b88d4f5b5a338158cb60)
+        ;
+
+        
+    
+    
+            marker_fa26a2ebfcb5ebf3793641c5beeb1890.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_563f48cce26b24d8d14dc5cc21cfed9e = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e6bdff0ea8d783011b72713c0d180ece = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05bae981b1a815cd985b96e79b6e4209 = $(`<div id="html_05bae981b1a815cd985b96e79b6e4209" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:43:28<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso o aplicación evidente <br>     <strong>Foto:</strong> JPEG_20250528_164617_1649074274565966193.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_164617_1649074274565966193.jpg" width="200"><br></div>`)[0];
+                popup_e6bdff0ea8d783011b72713c0d180ece.setContent(html_05bae981b1a815cd985b96e79b6e4209);
+            
+        
+
+        marker_563f48cce26b24d8d14dc5cc21cfed9e.bindPopup(popup_e6bdff0ea8d783011b72713c0d180ece)
+        ;
+
+        
+    
+    
+            marker_563f48cce26b24d8d14dc5cc21cfed9e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_421332b301efb967edfed3310407789c = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_06847703953d227955b5e5469e0ae6e6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_771c357d693e5d60736388453e7a4de5 = $(`<div id="html_771c357d693e5d60736388453e7a4de5" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:37:16<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con cruceta superior con cadena de aisladores en suspensión sin uso<br>     <strong>Foto:</strong> JPEG_20250528_164300_4867799926174630816.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_164300_4867799926174630816.jpg" width="200"><br></div>`)[0];
+                popup_06847703953d227955b5e5469e0ae6e6.setContent(html_771c357d693e5d60736388453e7a4de5);
+            
+        
+
+        marker_421332b301efb967edfed3310407789c.bindPopup(popup_06847703953d227955b5e5469e0ae6e6)
+        ;
+
+        
+    
+    
+            marker_421332b301efb967edfed3310407789c.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fc85f2dce98c89f79478146814391bb4 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_d09f20b88f80624ecf24da49e296c613 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f792a3dd93606dee76883be009bda3ad = $(`<div id="html_f792a3dd93606dee76883be009bda3ad" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:29:03<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Retención en una sola cruceta horizontal con cadena del medio con 7 discos y puente con linepost<br>     <strong>Foto:</strong> JPEG_20250528_163701_318706191250186309.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_163701_318706191250186309.jpg" width="200"><br></div>`)[0];
+                popup_d09f20b88f80624ecf24da49e296c613.setContent(html_f792a3dd93606dee76883be009bda3ad);
+            
+        
+
+        marker_fc85f2dce98c89f79478146814391bb4.bindPopup(popup_d09f20b88f80624ecf24da49e296c613)
+        ;
+
+        
+    
+    
+            marker_fc85f2dce98c89f79478146814391bb4.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a21270732925b9ce7ea62f43df813960 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_b7ab96b0f860d190abe6a9b47b0e04e0 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a69737d9f0cd2979ac52bfaa8fa7a8f9 = $(`<div id="html_a69737d9f0cd2979ac52bfaa8fa7a8f9" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:24:25<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Estructura de paso con doble aislador, Cruceta superior con cadena de aisladores en suspensión, sin uso evidente<br>     <strong>Foto:</strong> JPEG_20250528_162850_8679471016818546172.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_162850_8679471016818546172.jpg" width="200"><br></div>`)[0];
+                popup_b7ab96b0f860d190abe6a9b47b0e04e0.setContent(html_a69737d9f0cd2979ac52bfaa8fa7a8f9);
+            
+        
+
+        marker_a21270732925b9ce7ea62f43df813960.bindPopup(popup_b7ab96b0f860d190abe6a9b47b0e04e0)
+        ;
+
+        
+    
+    
+            marker_a21270732925b9ce7ea62f43df813960.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_25bdb7f84a1124638fb20c840cd8577f = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_93fe983d2821671806cbc7f63cda9c1f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7a74bfca276d737f1ae4315c4ddbc09b = $(`<div id="html_7a74bfca276d737f1ae4315c4ddbc09b" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 16:19:39<br>     <strong>Área:</strong> Bacano <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Cruceta superior con un aislador en suspensión sin uso evidentemente <br>     <strong>Foto:</strong> JPEG_20250528_162408_760935741705181431.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_162408_760935741705181431.jpg" width="200"><br></div>`)[0];
+                popup_93fe983d2821671806cbc7f63cda9c1f.setContent(html_7a74bfca276d737f1ae4315c4ddbc09b);
+            
+        
+
+        marker_25bdb7f84a1124638fb20c840cd8577f.bindPopup(popup_93fe983d2821671806cbc7f63cda9c1f)
+        ;
+
+        
+    
+    
+            marker_25bdb7f84a1124638fb20c840cd8577f.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b4a3632c77c6a1787cb39312ea355d24 = L.marker(
+                [4.3582139, -72.7586694],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_bd5fde0a0fba426973aebf9aa162ac8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0c4ceedcd83d44a0a16830ebd2b3f2f2 = $(`<div id="html_0c4ceedcd83d44a0a16830ebd2b3f2f2" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:47:31<br>     <strong>Área:</strong> Bacano<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Terminal con seccionadores monopolares y subterraniza, aisladores sobre una cruceta <br>     <strong>Foto:</strong> JPEG_20250528_161922_4843802967979060729.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_161922_4843802967979060729.jpg" width="200"><br></div>`)[0];
+                popup_bd5fde0a0fba426973aebf9aa162ac8f.setContent(html_0c4ceedcd83d44a0a16830ebd2b3f2f2);
+            
+        
+
+        marker_b4a3632c77c6a1787cb39312ea355d24.bindPopup(popup_bd5fde0a0fba426973aebf9aa162ac8f)
+        ;
+
+        
+    
+    
+            marker_b4a3632c77c6a1787cb39312ea355d24.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_63a03a5d82a0cefc80c3cd8af9402f50 = L.marker(
+                [4.3479548, -72.7127466],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_c7858d54e2096e0296ea6b536ae3a0cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_941b48e47c5969899a57d65264035d8e = $(`<div id="html_941b48e47c5969899a57d65264035d8e" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:46:16<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> 28c y 29c juntos <br>     <strong>Foto:</strong> JPEG_20250528_154717_2235362641970941477.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_154717_2235362641970941477.jpg" width="200"><br></div>`)[0];
+                popup_c7858d54e2096e0296ea6b536ae3a0cb.setContent(html_941b48e47c5969899a57d65264035d8e);
+            
+        
+
+        marker_63a03a5d82a0cefc80c3cd8af9402f50.bindPopup(popup_c7858d54e2096e0296ea6b536ae3a0cb)
+        ;
+
+        
+    
+    
+            marker_63a03a5d82a0cefc80c3cd8af9402f50.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7b3a179ea60e4d33844124fd1d097062 = L.marker(
+                [4.3479548, -72.7127466],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_fddb8173d18b40b05eb66926234421dd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_105072ee8658591449d856f1e953cfda = $(`<div id="html_105072ee8658591449d856f1e953cfda" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:38:45<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> Akira <br>     <strong>Observaciones:</strong> postes 28c y 29c juntos en retención canadiense, 29c con dps<br>     <strong>Foto:</strong> JPEG_20250528_154122_7819524402808437999.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_154122_7819524402808437999.jpg" width="200"><br></div>`)[0];
+                popup_fddb8173d18b40b05eb66926234421dd.setContent(html_105072ee8658591449d856f1e953cfda);
+            
+        
+
+        marker_7b3a179ea60e4d33844124fd1d097062.bindPopup(popup_fddb8173d18b40b05eb66926234421dd)
+        ;
+
+        
+    
+    
+            marker_7b3a179ea60e4d33844124fd1d097062.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4a7eadd760cbf7a97cf1de2c54bd8cf2 = L.marker(
+                [4.3479548, -72.7127466],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_0ca7500ea5c9fe844270786ef0107945 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_78f72c5157944508bc376d4834db5bf6 = $(`<div id="html_78f72c5157944508bc376d4834db5bf6" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:32:06<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> suspensión canadiense <br>     <strong>Foto:</strong> JPEG_20250528_153350_872321430646842312.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_153350_872321430646842312.jpg" width="200"><br></div>`)[0];
+                popup_0ca7500ea5c9fe844270786ef0107945.setContent(html_78f72c5157944508bc376d4834db5bf6);
+            
+        
+
+        marker_4a7eadd760cbf7a97cf1de2c54bd8cf2.bindPopup(popup_0ca7500ea5c9fe844270786ef0107945)
+        ;
+
+        
+    
+    
+            marker_4a7eadd760cbf7a97cf1de2c54bd8cf2.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0910ed842fcf072f5d7a4624a8873960 = L.marker(
+                [4.3479548, -72.7127466],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_4aba43e851112fe1a7039c1da5e804cb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1d786d84072e6b9d42698b782bf4b376 = $(`<div id="html_1d786d84072e6b9d42698b782bf4b376" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:24:44<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> retención canadiense <br>     <strong>Foto:</strong> JPEG_20250528_153144_6751221877868008008.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_153144_6751221877868008008.jpg" width="200"><br></div>`)[0];
+                popup_4aba43e851112fe1a7039c1da5e804cb.setContent(html_1d786d84072e6b9d42698b782bf4b376);
+            
+        
+
+        marker_0910ed842fcf072f5d7a4624a8873960.bindPopup(popup_4aba43e851112fe1a7039c1da5e804cb)
+        ;
+
+        
+    
+    
+            marker_0910ed842fcf072f5d7a4624a8873960.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ea9bb3dddd7aa4dd94ca17c3459f8c17 = L.marker(
+                [4.3479548, -72.7127466],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_e4d1821262cb78a0b50b0909a502b809 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ba8f0d9632bf08e75b12f1f607e63f8a = $(`<div id="html_ba8f0d9632bf08e75b12f1f607e63f8a" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:22:47<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> pullover con aisladores de 8 campanas <br>     <strong>Foto:</strong> JPEG_20250528_152430_6574704327574735840.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_152430_6574704327574735840.jpg" width="200"><br></div>`)[0];
+                popup_e4d1821262cb78a0b50b0909a502b809.setContent(html_ba8f0d9632bf08e75b12f1f607e63f8a);
+            
+        
+
+        marker_ea9bb3dddd7aa4dd94ca17c3459f8c17.bindPopup(popup_e4d1821262cb78a0b50b0909a502b809)
+        ;
+
+        
+    
+    
+            marker_ea9bb3dddd7aa4dd94ca17c3459f8c17.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_134fba92970c96a8f3426b4c230ba949 = L.marker(
+                [4.3479548, -72.7127466],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_c73c957cc15fa3856468eb415f8bdc74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_eb068e0958af345e5e088f3dddc1d9cf = $(`<div id="html_eb068e0958af345e5e088f3dddc1d9cf" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 15:17:10<br>     <strong>Área:</strong> Akira Noreste<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> terminal con derivación para subterranizar, con seccionadores monopolares y premoldeados , sin templete por vano flojo<br>     <strong>Foto:</strong> JPEG_20250528_152226_1400267481695363927.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_152226_1400267481695363927.jpg" width="200"><br></div>`)[0];
+                popup_c73c957cc15fa3856468eb415f8bdc74.setContent(html_eb068e0958af345e5e088f3dddc1d9cf);
+            
+        
+
+        marker_134fba92970c96a8f3426b4c230ba949.bindPopup(popup_c73c957cc15fa3856468eb415f8bdc74)
+        ;
+
+        
+    
+    
+            marker_134fba92970c96a8f3426b4c230ba949.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b5212d8e71f702d67b636a70db36ea57 = L.marker(
+                [4.3480483, -72.7130503],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_d7047ec66a91c6419eaa0e11f081b346 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_760fb05a18a486b7e616faf5ab95a80e = $(`<div id="html_760fb05a18a486b7e616faf5ab95a80e" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:48:31<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> Retención canadiense con dps<br>     <strong>Foto:</strong> JPEG_20250528_145213_4459864942990581006.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_145213_4459864942990581006.jpg" width="200"><br></div>`)[0];
+                popup_d7047ec66a91c6419eaa0e11f081b346.setContent(html_760fb05a18a486b7e616faf5ab95a80e);
+            
+        
+
+        marker_b5212d8e71f702d67b636a70db36ea57.bindPopup(popup_d7047ec66a91c6419eaa0e11f081b346)
+        ;
+
+        
+    
+    
+            marker_b5212d8e71f702d67b636a70db36ea57.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a5d0e44f0effa988e42a8ea163a96d83 = L.marker(
+                [4.3480483, -72.7130503],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_ba453f7d7ba6ef5cb2a913e1f88dee71 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4545e3bcdf47fcffb06003bcfe7b23cb = $(`<div id="html_4545e3bcdf47fcffb06003bcfe7b23cb" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:46:30<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> suspensión canadiense <br>     <strong>Foto:</strong> JPEG_20250528_144815_2514008042753954794.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_144815_2514008042753954794.jpg" width="200"><br></div>`)[0];
+                popup_ba453f7d7ba6ef5cb2a913e1f88dee71.setContent(html_4545e3bcdf47fcffb06003bcfe7b23cb);
+            
+        
+
+        marker_a5d0e44f0effa988e42a8ea163a96d83.bindPopup(popup_ba453f7d7ba6ef5cb2a913e1f88dee71)
+        ;
+
+        
+    
+    
+            marker_a5d0e44f0effa988e42a8ea163a96d83.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_881c75506781e21b12d706eda6373dfa = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_b26613a2628920f949ddc94f3228ca74 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b37fbdab6670f689742e9abb038b5b84 = $(`<div id="html_b37fbdab6670f689742e9abb038b5b84" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:42:17<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> poste con dos seccionadores monopolares, 1 reconectador, aisladores de 8 campanas. cinco niveles de crucetas para aisladores y equipos <br>     <strong>Foto:</strong> JPEG_20250528_144607_7378717099806727679.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_144607_7378717099806727679.jpg" width="200"><br></div>`)[0];
+                popup_b26613a2628920f949ddc94f3228ca74.setContent(html_b37fbdab6670f689742e9abb038b5b84);
+            
+        
+
+        marker_881c75506781e21b12d706eda6373dfa.bindPopup(popup_b26613a2628920f949ddc94f3228ca74)
+        ;
+
+        
+    
+    
+            marker_881c75506781e21b12d706eda6373dfa.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4d314959eb4473ddfdd1ba20bbcbc8b0 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_68df79ff1ddc3f1ebb5e33ca41a1cc8f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1b8946cdbc3a771dcff79e5980f09b95 = $(`<div id="html_1b8946cdbc3a771dcff79e5980f09b95" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:28:50<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> conexión pórtico y cruceta red Akira  estructura retención y derivación a pórtico , con cadenas de aisladores y aisladores de campana <br>     <strong>Foto:</strong> JPEG_20250528_143230_1625826464926257976.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_143230_1625826464926257976.jpg" width="200"><br></div>`)[0];
+                popup_68df79ff1ddc3f1ebb5e33ca41a1cc8f.setContent(html_1b8946cdbc3a771dcff79e5980f09b95);
+            
+        
+
+        marker_4d314959eb4473ddfdd1ba20bbcbc8b0.bindPopup(popup_68df79ff1ddc3f1ebb5e33ca41a1cc8f)
+        ;
+
+        
+    
+    
+            marker_4d314959eb4473ddfdd1ba20bbcbc8b0.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_29e0cc90700065a63b98762e111e6d0b = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_42e3f2977a76ab42eef3a7d62328453d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_50bd83aaf93960d9e43a4c4006f6a9d7 = $(`<div id="html_50bd83aaf93960d9e43a4c4006f6a9d7" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:21:15<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> retención triangular sobre una cruceta <br>     <strong>Foto:</strong> JPEG_20250528_142146_3078445170702810460.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_142146_3078445170702810460.jpg" width="200"><br></div>`)[0];
+                popup_42e3f2977a76ab42eef3a7d62328453d.setContent(html_50bd83aaf93960d9e43a4c4006f6a9d7);
+            
+        
+
+        marker_29e0cc90700065a63b98762e111e6d0b.bindPopup(popup_42e3f2977a76ab42eef3a7d62328453d)
+        ;
+
+        
+    
+    
+            marker_29e0cc90700065a63b98762e111e6d0b.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_39536c53dcb49223aba4305b6611f252 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_da4cb061d2aaee2d1870cb35d44a3425 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_11248c3b5732474fdffe7ea472c06870 = $(`<div id="html_11248c3b5732474fdffe7ea472c06870" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:07:36<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> retención - derivación <br>     <strong>Foto:</strong> JPEG_20250528_141421_8441529517748599261.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_141421_8441529517748599261.jpg" width="200"><br></div>`)[0];
+                popup_da4cb061d2aaee2d1870cb35d44a3425.setContent(html_11248c3b5732474fdffe7ea472c06870);
+            
+        
+
+        marker_39536c53dcb49223aba4305b6611f252.bindPopup(popup_da4cb061d2aaee2d1870cb35d44a3425)
+        ;
+
+        
+    
+    
+            marker_39536c53dcb49223aba4305b6611f252.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c71459b94267c95e29ed6bee83150b9 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8aa7d5c35face5c7b9625e9981930a47 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e1cee4adcf588e532440e81a34a6345f = $(`<div id="html_e1cee4adcf588e532440e81a34a6345f" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 14:01:49<br>     <strong>Área:</strong> Akira <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> retención - derivación <br>     <strong>Foto:</strong> JPEG_20250528_140655_9023775544718087335.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_140655_9023775544718087335.jpg" width="200"><br></div>`)[0];
+                popup_8aa7d5c35face5c7b9625e9981930a47.setContent(html_e1cee4adcf588e532440e81a34a6345f);
+            
+        
+
+        marker_6c71459b94267c95e29ed6bee83150b9.bindPopup(popup_8aa7d5c35face5c7b9625e9981930a47)
+        ;
+
+        
+    
+    
+            marker_6c71459b94267c95e29ed6bee83150b9.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a826c28f13d42b3289f661c0c0f93a83 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_dcdbe0638b9212213fb7011e469b553f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6f102c0ec452c547478b4cee92f000c1 = $(`<div id="html_6f102c0ec452c547478b4cee92f000c1" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:57:11<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> paso con dps <br>     <strong>Foto:</strong> JPEG_20250528_140135_7255680371417658505.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_140135_7255680371417658505.jpg" width="200"><br></div>`)[0];
+                popup_dcdbe0638b9212213fb7011e469b553f.setContent(html_6f102c0ec452c547478b4cee92f000c1);
+            
+        
+
+        marker_a826c28f13d42b3289f661c0c0f93a83.bindPopup(popup_dcdbe0638b9212213fb7011e469b553f)
+        ;
+
+        
+    
+    
+            marker_a826c28f13d42b3289f661c0c0f93a83.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bfb1378d0760307de4e212c4b991d972 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_418533bf1e46fc05a4cdf4b939034ed1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5e17f89b0d39b0500063b60254bcfb15 = $(`<div id="html_5e17f89b0d39b0500063b60254bcfb15" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:53:28<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> retención con derivación en 2 cruceta <br>     <strong>Foto:</strong> JPEG_20250528_135654_6234945261888464376.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_135654_6234945261888464376.jpg" width="200"><br></div>`)[0];
+                popup_418533bf1e46fc05a4cdf4b939034ed1.setContent(html_5e17f89b0d39b0500063b60254bcfb15);
+            
+        
+
+        marker_bfb1378d0760307de4e212c4b991d972.bindPopup(popup_418533bf1e46fc05a4cdf4b939034ed1)
+        ;
+
+        
+    
+    
+            marker_bfb1378d0760307de4e212c4b991d972.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_7f15c21bf3d53cea2e2dfed799074bf2 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_5d9137d1eb0438f8647500efda831eb1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1c1a3ede974c7eb9bd0567c674b787c7 = $(`<div id="html_1c1a3ede974c7eb9bd0567c674b787c7" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:49:56<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> paso con dps<br>     <strong>Foto:</strong> JPEG_20250528_135305_4804356473429189327.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_135305_4804356473429189327.jpg" width="200"><br></div>`)[0];
+                popup_5d9137d1eb0438f8647500efda831eb1.setContent(html_1c1a3ede974c7eb9bd0567c674b787c7);
+            
+        
+
+        marker_7f15c21bf3d53cea2e2dfed799074bf2.bindPopup(popup_5d9137d1eb0438f8647500efda831eb1)
+        ;
+
+        
+    
+    
+            marker_7f15c21bf3d53cea2e2dfed799074bf2.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4296d9c8e6f7da3746aa6cf4fdec51fa = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8fc24577f45a7ec8cd89579aceb63e75 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a32ef91329ae88e0bfa006f264c83e97 = $(`<div id="html_a32ef91329ae88e0bfa006f264c83e97" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:45:06<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> estructura de paso <br>     <strong>Foto:</strong> JPEG_20250528_134937_1306174219385860639.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_134937_1306174219385860639.jpg" width="200"><br></div>`)[0];
+                popup_8fc24577f45a7ec8cd89579aceb63e75.setContent(html_a32ef91329ae88e0bfa006f264c83e97);
+            
+        
+
+        marker_4296d9c8e6f7da3746aa6cf4fdec51fa.bindPopup(popup_8fc24577f45a7ec8cd89579aceb63e75)
+        ;
+
+        
+    
+    
+            marker_4296d9c8e6f7da3746aa6cf4fdec51fa.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d515c785eac31d8647ffcb8d5c21e14d = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_6bdc195c3358b5fb51f073aad2dc2ec5 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd7ca58602f42d6b1dbab099402b13f9 = $(`<div id="html_cd7ca58602f42d6b1dbab099402b13f9" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:38:35<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> retención en una sola cruceta 1 cruceta corta para dos inferior <br>     <strong>Foto:</strong> JPEG_20250528_134450_6900671878573523490.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_134450_6900671878573523490.jpg" width="200"><br></div>`)[0];
+                popup_6bdc195c3358b5fb51f073aad2dc2ec5.setContent(html_cd7ca58602f42d6b1dbab099402b13f9);
+            
+        
+
+        marker_d515c785eac31d8647ffcb8d5c21e14d.bindPopup(popup_6bdc195c3358b5fb51f073aad2dc2ec5)
+        ;
+
+        
+    
+    
+            marker_d515c785eac31d8647ffcb8d5c21e14d.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5e0b73f4d7953a855cf49e838748adf4 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_bc278703c79ce0b7f05e13d370130f5d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3e838b650deeb8372cb95acbbd508efb = $(`<div id="html_3e838b650deeb8372cb95acbbd508efb" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:35:00<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> estructura de paso <br>     <strong>Foto:</strong> JPEG_20250528_133819_346441777399950506.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_133819_346441777399950506.jpg" width="200"><br></div>`)[0];
+                popup_bc278703c79ce0b7f05e13d370130f5d.setContent(html_3e838b650deeb8372cb95acbbd508efb);
+            
+        
+
+        marker_5e0b73f4d7953a855cf49e838748adf4.bindPopup(popup_bc278703c79ce0b7f05e13d370130f5d)
+        ;
+
+        
+    
+    
+            marker_5e0b73f4d7953a855cf49e838748adf4.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_cdb4e944fb7f868883c6b5c164eb4d8a = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_b1852000b84255fb94b22891826b04fb = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_93a8a21aa028fa072e8c89a8b5ab2612 = $(`<div id="html_93a8a21aa028fa072e8c89a8b5ab2612" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:28:05<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> poste derivación subterráneo a Akira central <br>     <strong>Foto:</strong> JPEG_20250528_133444_822183172824708472.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_133444_822183172824708472.jpg" width="200"><br></div>`)[0];
+                popup_b1852000b84255fb94b22891826b04fb.setContent(html_93a8a21aa028fa072e8c89a8b5ab2612);
+            
+        
+
+        marker_cdb4e944fb7f868883c6b5c164eb4d8a.bindPopup(popup_b1852000b84255fb94b22891826b04fb)
+        ;
+
+        
+    
+    
+            marker_cdb4e944fb7f868883c6b5c164eb4d8a.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_b3c732284e5869be21f369a1d67f1584 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_2ed299f16379ef96318b22dfa877fc31 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cdbd358e1acde7f68a6e17384200a3cd = $(`<div id="html_cdbd358e1acde7f68a6e17384200a3cd" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:23:33<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> estructura de paso <br>     <strong>Foto:</strong> JPEG_20250528_132744_3122404542977844572.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_132744_3122404542977844572.jpg" width="200"><br></div>`)[0];
+                popup_2ed299f16379ef96318b22dfa877fc31.setContent(html_cdbd358e1acde7f68a6e17384200a3cd);
+            
+        
+
+        marker_b3c732284e5869be21f369a1d67f1584.bindPopup(popup_2ed299f16379ef96318b22dfa877fc31)
+        ;
+
+        
+    
+    
+            marker_b3c732284e5869be21f369a1d67f1584.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_4d78432c4518652e8a578ce92c86d021 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_6d0b210d96ce9a28d63a1f85ed74a66d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cd8d677d11ea91b7c13dc648ce3a7449 = $(`<div id="html_cd8d677d11ea91b7c13dc648ce3a7449" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:22:52<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> estructura en derivación <br>     <strong>Foto:</strong> JPEG_20250528_132312_7772683813862577315.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_132312_7772683813862577315.jpg" width="200"><br></div>`)[0];
+                popup_6d0b210d96ce9a28d63a1f85ed74a66d.setContent(html_cd8d677d11ea91b7c13dc648ce3a7449);
+            
+        
+
+        marker_4d78432c4518652e8a578ce92c86d021.bindPopup(popup_6d0b210d96ce9a28d63a1f85ed74a66d)
+        ;
+
+        
+    
+    
+            marker_4d78432c4518652e8a578ce92c86d021.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_ec9fb719ddcd902601e6f2fcd7531562 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_0cc7c2d3ca5476e3c5fef54ea4191974 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a340f168a903734ca306c3851e2da1fd = $(`<div id="html_a340f168a903734ca306c3851e2da1fd" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:14:03<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> estructura paso - usar suspensión <br>     <strong>Foto:</strong> JPEG_20250528_131821_1178555729178656156.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_131821_1178555729178656156.jpg" width="200"><br></div>`)[0];
+                popup_0cc7c2d3ca5476e3c5fef54ea4191974.setContent(html_a340f168a903734ca306c3851e2da1fd);
+            
+        
+
+        marker_ec9fb719ddcd902601e6f2fcd7531562.bindPopup(popup_0cc7c2d3ca5476e3c5fef54ea4191974)
+        ;
+
+        
+    
+    
+            marker_ec9fb719ddcd902601e6f2fcd7531562.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5cfb14174288f0773c9eb34a14302de4 = L.marker(
+                [4.3413863, -72.715766],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_d1eb29e188a24412c820e08589a6e821 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2424e2aae3beb76650aef157fa7dd64b = $(`<div id="html_2424e2aae3beb76650aef157fa7dd64b" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 13:02:52<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> derivación con cruceta superior más larga<br>     <strong>Foto:</strong> JPEG_20250528_130806_4610662669972760949.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_130806_4610662669972760949.jpg" width="200"><br></div>`)[0];
+                popup_d1eb29e188a24412c820e08589a6e821.setContent(html_2424e2aae3beb76650aef157fa7dd64b);
+            
+        
+
+        marker_5cfb14174288f0773c9eb34a14302de4.bindPopup(popup_d1eb29e188a24412c820e08589a6e821)
+        ;
+
+        
+    
+    
+            marker_5cfb14174288f0773c9eb34a14302de4.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f352e86585c5b60d45594fea03503506 = L.marker(
+                [4.3417068, -72.7465409],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_8b7fafd8c598c8bb8f7b7cbab995d58b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_977a21c9d45d2e2787fc3721d83f0c2f = $(`<div id="html_977a21c9d45d2e2787fc3721d83f0c2f" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 12:55:38<br>     <strong>Área:</strong> kitaro<br>     <strong>Responsable:</strong> kitaro<br>     <strong>Observaciones:</strong> doble cruceta para derivar<br>     <strong>Foto:</strong> JPEG_20250528_130232_888266786248999095.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_130232_888266786248999095.jpg" width="200"><br></div>`)[0];
+                popup_8b7fafd8c598c8bb8f7b7cbab995d58b.setContent(html_977a21c9d45d2e2787fc3721d83f0c2f);
+            
+        
+
+        marker_f352e86585c5b60d45594fea03503506.bindPopup(popup_8b7fafd8c598c8bb8f7b7cbab995d58b)
+        ;
+
+        
+    
+    
+            marker_f352e86585c5b60d45594fea03503506.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_11feaaa07d4c6113bf962a022ffb9437 = L.marker(
+                [4.3417068, -72.7465409],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_635f7390f5a7dea12bd0242caece5698 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_9f1b658c9434e452cfda2cb191a9f331 = $(`<div id="html_9f1b658c9434e452cfda2cb191a9f331" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 12:45:03<br>     <strong>Área:</strong> kitaro <br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> conexión pórtico <br>     <strong>Foto:</strong> JPEG_20250528_124837_6363001702591021817.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_124837_6363001702591021817.jpg" width="200"><br></div>`)[0];
+                popup_635f7390f5a7dea12bd0242caece5698.setContent(html_9f1b658c9434e452cfda2cb191a9f331);
+            
+        
+
+        marker_11feaaa07d4c6113bf962a022ffb9437.bindPopup(popup_635f7390f5a7dea12bd0242caece5698)
+        ;
+
+        
+    
+    
+            marker_11feaaa07d4c6113bf962a022ffb9437.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_e5397e3cb2c540e5543b6797e572474e = L.marker(
+                [4.3417068, -72.7465409],
+                {
+}
+            ).addTo(marker_cluster_4a9f476fe59f66b71645a2459311ba3f);
+        
+    
+        var popup_777f6dec72389d0f6f9a1570d21361a7 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_96329d7eb80350032665c74d3277aa57 = $(`<div id="html_96329d7eb80350032665c74d3277aa57" style="width: 100.0%; height: 100.0%;">     <strong>Fecha:</strong> 2025-05-28 12:33:29<br>     <strong>Área:</strong> kitaro<br>     <strong>Responsable:</strong> nan<br>     <strong>Observaciones:</strong> nan<br>     <strong>Foto:</strong> JPEG_20250528_123354_3478051974247572647.jpg<br>     <img src="INFORMACION DE ENTRADA\VA4\RegistrosExportados\JPEG_20250528_123354_3478051974247572647.jpg" width="200"><br></div>`)[0];
+                popup_777f6dec72389d0f6f9a1570d21361a7.setContent(html_96329d7eb80350032665c74d3277aa57);
+            
+        
+
+        marker_e5397e3cb2c540e5543b6797e572474e.bindPopup(popup_777f6dec72389d0f6f9a1570d21361a7)
+        ;
+
+        
+    
+    
+            marker_e5397e3cb2c540e5543b6797e572474e.bindTooltip(
+                `<div>
+                     Ver registro
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            marker_cluster_4a9f476fe59f66b71645a2459311ba3f.addTo(map_bfda94c4c508e0cfe36ba0905a3211ae);
+        
+</script>
+</html>
