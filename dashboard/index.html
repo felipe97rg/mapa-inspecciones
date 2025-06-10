@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Encabezado -->
+    <header>
+      <h1 class="dashboard-title">Dashboard de Indicadores</h1>
+    </header>
+
+    <!-- KPIs -->
+    <section class="kpi-container">
+      <div class="kpi">
+        <p>Ventas</p>
+        <h2>478</h2>
+        <span class="positive">↑ 13%</span>
+      </div>
+      <div class="kpi">
+        <p>Leads</p>
+        <h2>6</h2>
+        <span class="positive">↑ 1</span>
+      </div>
+      <div class="kpi">
+        <p>CPL</p>
+        <h2>$7.2</h2>
+        <span class="positive">↑ $1.2</span>
+      </div>
+    </section>
+
+    <!-- Gráfica + Mapa -->
+    <section class="content-container">
+      <div class="chart-container">
+        <canvas id="barChart"></canvas>
+      </div>
+
+      <div id="map" class="map-container"> 
+        <iframe src="assets/mapas/mapa_marker_coloreado.html" width="100%" height="400" frameborder="0"></iframe>
+
+      </div>
+    </section>
+  </div>
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <!-- Tu archivo JS -->
+  <script src="js/main.js"></script>
+</body>
+</html>
